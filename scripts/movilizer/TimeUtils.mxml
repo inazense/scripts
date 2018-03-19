@@ -1,0 +1,292 @@
+<!--
+Movilizer MEL functions to work with times
+-->
+<MovilizerRequest requestTrackingKey="" systemId="${#Project#SystemID}" systemPassword="${#Project#Password}" 
+	numResponses="1000" synchronousResponse="true" 
+	useAutoAcknowledge="true" xmlns="http://movilitas.com/movilizer/v15">
+	
+	<moveletDelete moveletKey="timeUtils" ignoreExtensionKey="true" />
+	<moveletSet>
+		<movelet moveletKey="timeUtils" initialQuestionKey="q1" >
+			<question key="q1" type="41" title="Epsilon screen" backNavigationAllowed="false">
+				<answer key="q1.a1" nextQuestionKey="END" />
+			</question>
+			
+			<syncDownloadAssignment>
+			
+				<!-- DESC: Extracts information from a timestamp and returns it as array 	-->
+				<!-- IN: timestamp. String. Timestamp to convert 							-->
+				<!-- OUT: Array. Year, month, day, hour and minute fields 					-->
+				$global:timestampToArray = function(timestamp)
+				{
+					date 			= timestampToDatetime(timestamp, "", true);
+					array["year"] 	= substring(date, 0, 4);
+					array["month"] 	= substring(date, 5, 7);
+					array["day"] 	= substring(date, 8, 10);
+					
+					separatorPos 	= indexOf(date, 'T');
+					time 			= substring(date, separatorPos + 1, length(date));
+					
+					array['hour'] 	= substring(time, 0, 2);
+					array['minute'] = substring(time, 3, 5);
+					
+					return array;
+				};
+				
+				<!-- DESC: Extracts information from a string datetime and returns it as array 	-->
+				<!-- IN: datetime. String. Datetime to convert (yyyy-mm-dd:HH:					-->
+				<!-- OUT: Array. Year, month, day, hour and minute fields 						-->
+				$global:stringDatetimeToArray = function(datetime)
+				{
+					array['year'] 	=  substring(datetime, 0, 4);
+					array['month'] 	=  substring(datetime, 5, 7);
+					array['day'] 	=  substring(datetime, 8, 10);
+					array['hour'] 	=  substring(datetime, 11, 13);
+					array['minute'] =  substring(datetime, 14, 16);
+					
+					return array;
+				};
+				
+				<!-- DESC: Concatenate a date (only year, month and day) separated by a text string between fields.  -->
+				<!-- IN: 																							 -->
+				<!-- 		date. String. Date to convert 															 -->
+				<!-- 		Separator. String. String that will separate the date 									 -->
+				<!-- 		modeDate. Integer. Date mode. 1 = timestamp. 2 = datetime. By default it takes timestamp -->
+				<!-- OUT: Array. Year, month, day, hour and minute fields 											 -->
+				$global:concatDates = function(date, separator, modeDate)
+				{
+					if (modeDate == 2)
+					{
+						array = call($global:stringDatetimeToArray)(date);
+					}
+					else
+					{
+						array = call($global:timestampToArray)(date);
+					}
+					
+					newDate = concat(array['year'], separator, array['month'], separator, array['day']);
+					
+					return newDate;
+				};
+				
+				<!-- DESC: Check if a date is the current system day or not  										 -->
+				<!-- IN: 																							 -->
+				<!-- 		date. String. Date to check															 	 -->
+				<!-- 		modeDate. Integer. Date mode. 1 = timestamp. 2 = datetime. By default it takes timestamp -->
+				<!-- OUT: Boolean. true if is actual date, false if not 											 -->
+				$global:isToday = function(date, modeDate)
+				{
+					today = call($global:timestampToArray)(systemTime());
+					
+					if (modeDate == 2)
+					{
+						array = call($global:stringDatetimeToArray)(date);
+					}
+					else
+					{
+						array = call($global:timestampToArray)(date);
+					}
+					
+					if (strEquals(array['day'], today['day']) ?and strEquals(array['month'], today['month']) ?and strEquals(array['year'], today['year']))
+					{
+						return true;
+					}
+					
+					return false;
+				};
+				
+				<!-- DESC: Check if a date is prior to system day 														-->
+				<!-- IN: 																								-->
+				<!-- 		date. String. Date to check 																-->
+				<!-- 		modeDate. Integer. Date mode. 1 = timestamp. 2 = datetime. By default it takes timestamp 	-->
+				<!-- OUT: Boolean. true if past date, false if not -->
+				$global:isPast = function(date, modeDate)
+				{
+					today = call($global:timestampToArray)(systemTime());
+					
+					if (modeDate == 2)
+					{
+						array = call($global:stringDatetimeToArray)(date);
+					}
+					else
+					{
+						array = call($global:timestampToArray)(date);
+					}
+					
+					result = false;
+					
+					if (array['year'] ?lt today['year'])
+					{
+						result = true;
+					}
+					else
+					{
+						if (array['year'] == today['year'])
+						{
+							if (array['month'] ?lt today['month'])
+							{
+								result = true;
+							}
+							else
+							{
+								if (array['month'] == today['month'] ?and array['day'] ?lt today['day'])
+								{
+									result = true;
+								}
+							}
+						}
+					}
+					
+					return result;
+				};
+				
+				<!-- DESC: Check if a date is later than the system day 												-->
+				<!-- IN: 																								-->
+				<!-- 		date. String. Date to check 																-->
+				<!-- 		modeDate. Integer. Date mode. 1 = timestamp. 2 = datetime. By default it takes timestamp 	-->
+				<!-- OUT: Boolean. true if it's future date, false if not 												-->
+				$global:isFuture = function(date, modeDate)
+				{
+					today = call($global:timestampToArray)(systemTime());
+					
+					if (modeDate == 2)
+					{
+						array = call($global:stringDatetimeToArray)(date);
+					}
+					else
+					{
+						array = call($global:timestampToArray)(date);
+					}
+					
+					result = false;
+					
+					if (array['year'] ?gt today['year'])
+					{
+						result = true;
+					}
+					else
+					{
+						if (array['year'] == today['year'])
+						{
+							if (array['month'] ?gt today['month'])
+							{
+								result = true;
+							}
+							else
+							{
+								if (array['month'] == today['month'] ?and array['day'] ?gt today['day'])
+								{
+									result = true;
+								}
+							}
+						}
+					}
+					
+					return result;
+				};
+				
+				<!-- DESC: Check if a timestamp date is between two 				-->
+				<!-- IN:  															-->
+				<!-- 		date. String timestamp 									-->
+				<!-- 		from. String timestamp 									-->
+				<!-- 		to. String timestamp 									-->
+				<!-- OUT: Boolean. true if it is between two dates, false otherwise -->
+				$global:isDateBetweenTwo = function(date, from, to)
+				{
+					dateArray 	= call($global:timestampToArray)(date);
+					fromArray 	= call($global:timestampToArray)(from);
+					toArray 	= call($global:timestampToArray)(to);
+					
+					result = true;
+					
+					if (dateArray['year'] ?ge fromArray['year'] ?and dateArray['year'] ?le toArray['year']) 
+					{
+	            		if (dateArray['year'] == fromArray['year']) 
+	            		{
+	            			if (dateArray['month'] ?lt fromArray['month']) 
+	            			{
+	            				result = false;
+	            			}
+	            			else 
+	            			{
+	            				if (dateArray['month'] == fromArray['month'] ?and dateArray['day'] ?lt fromArray['day']) 
+	            				{
+	            					result = false;
+	            				}
+	            			} 
+	            		}
+	            		else 
+	            		{
+	            			if (dateArray['year'] == toArray['year']) 
+	            			{
+	            				if (dateArray['month'] ?gt fromArray['month']) 
+	            				{
+	            					result = false;
+	            				}
+	            				else 
+	            				{
+	            					if (dateArray['month'] == toArray['month'] ?and dateArray['day'] ?gt toArray['day']) 
+	            					{
+		            					result = false;
+		            				}
+	            				}
+	            			}
+	            		}
+	            	}
+	            	else 
+	            	{
+	            		result = false;
+	            	}
+	            	
+	            	return result;
+				};
+				
+				<!-- DESC: Transform a decimal hour (as 4.5, or 4.75) in time format (0430, or 0475) 	-->
+				<!-- IN: time. String with decimal format 												-->
+				<!-- OUT: String with time format 														-->
+				$global:fromDecimalToBPCSFormat = function(time)
+				{
+				    time = getAnswerValueByClientKey($answer:'q1.a1', 'ck.test');
+				    timeArray = strTokenArray(time, '.');
+				    if (count(timeArray) ?lt 2)
+				    {
+				        timeArray = strTokenArray(time, ',');
+				    }
+
+				    hour = timeArray[0];
+				    minutes = timeArray[1];
+
+				    if (parseInt(hour) ?lt 10)
+				    {
+				        hour = concat('0', parseInt(hour));
+				    }
+
+				    if (length(minutes) == 1)
+				    {
+				        minutes = concat(minutes, 0);
+				    }
+
+				    minutes = (minutes / 100) * 60;
+				    minutesArray = strTokenArray(minutes, '.');
+
+				    if (count(minutesArray) ?lt 2)
+				    {
+				        minutesArray = strTokenArray(minutes, ','); 
+				    }
+
+				    minutes = minutesArray[0];
+				    if (length(minutes) == 1)
+				    {
+				        minutes = concat('0', minutes);
+				    }
+
+				    result = concat(hour, minutes);
+				};
+			</syncDownloadAssignment>
+			
+			<name>Time utils</name>
+		</movelet>
+		
+		<participant participantKey="${#DEV#ParticipantId}" name="${#DEV#ParticipantName}" deviceAddress="${#DEV#DevideAddress}" />
+	</moveletSet>	
+</MovilizerRequest>

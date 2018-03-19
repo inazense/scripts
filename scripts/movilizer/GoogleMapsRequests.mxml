@@ -1,0 +1,82 @@
+<!-- 
+Movilizer MEL methods to use Google Maps API 
+ -->
+<MovilizerRequest 
+	systemId="${#Project#SystemID}" 
+	systemPassword="${#Project#Password}" 
+	numResponses="0" 
+	synchronousResponse="true" 
+	useAutoAcknowledge="false" 
+	xmlns="http://movilitas.com/movilizer/v15">
+	
+	<moveletDelete moveletKey="googleMapsRequests" ignoreExtensionKey="true" />
+	<moveletSet>
+		<movelet moveletKey="googleMapsRequests" initialQuestionKey="q1">
+		
+			<!-- Just an Epsilon Screen -->
+			<question key="q1" type="41" title="Epsilon Screen" backNavigationAllowed="true">
+				<answer key="q1.a1" nextQuestionKey="END" position="0" />
+			</question>
+			
+			<syncDownloadAssignment>
+
+				<!-- DESC: Calculates travel time between two points in Google Maps 		-->
+				<!-- IN: 																	-->
+				<!-- 		beginning. String. First address 								-->
+				<!-- 		destination. String. Last address 								-->
+				<!-- OUT: Array																-->
+				<!-- 	  {		 															-->
+				<!-- 	  	time. String with total travel time 							-->
+				<!-- 	  	startAddress. String with start address returned by Google Maps -->
+				<!-- 	  	startLat. Decimal. startAddress latitude 						-->
+				<!-- 	  	startLng. Decimal. startAddress longitude 						-->
+				<!-- 	  	endAddress. String with end address returned by Google Maps 	-->
+				<!-- 	  	endLat. Decimal. endAddress latitude 							-->
+				<!-- 	  	endLng. Decimal. endAddress longitude 							-->
+				<!-- 	  }		 															-->
+				$global:travelTime = function(beginning, destination){
+				
+					// Prepares URL to do a request to Google Maps API
+					connectionURI = concat("https://maps.googleapis.com/maps/api/directions/json?origin=", beginning, "&amp;destination=", destination);
+					
+					try{
+						// Connect with the API and store the result in a string
+						connectionID = connect(connectionURI, 'GET');
+						content = readTextAll(connectionID);
+						
+						// Convert String to JSON
+						arrayJSON = jsonToObject(content);
+						
+						// If status is OK, I received a correct response 
+						if (arrayJSON["status"] == "OK"){
+							result["time"] = arrayJSON["routes"]["0"]["legs"]["0"]["duration"]["text"];
+							result["startAddress"] = arrayJSON["routes"]["0"]["start_address"];
+							result["startLat"] = arrayJSON["routes"]["0"]["legs"]["0"]["start_location"]["lat"];
+							result["startLng"] = arrayJSON["routes"]["0"]["legs"]["0"]["start_location"]["lng"];
+							result["endAddress"] = arrayJSON["routes"]["0"]["legs"]["0"]["end_address"];
+							result["endLat"] = arrayJSON["routes"]["0"]["legs"]["0"]["end_location"]["lat"];
+							result["endLng"] = arrayJSON["routes"]["0"]["legs"]["0"]["end_location"]["lng"];
+						}
+						else{
+							result = null;
+						}
+					}
+					finally{
+						try{
+							close(connectionID);
+						}
+						catch(e){
+							$local:exception = e;
+						}
+					}
+					
+					return result;
+				}
+			</syncDownloadAssignment>
+			
+			<name>Google Maps Requests</name>
+		</movelet>
+		
+		<participant participantKey="${#DEV#ParticipantId}" name="${#DEV#ParticipantName}" deviceAddress="${#DEV#DevideAddress}" />
+	</moveletSet>
+</MovilizerRequest>

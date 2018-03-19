@@ -1,0 +1,169 @@
+<!--
+Movilizer Scan screen used in Windows CE devices
+-->
+<MovilizerRequest 
+	systemId="${#Project#SystemID}" 
+	systemPassword="${#Project#Password}" 
+	numResponses="0" 
+	synchronousResponse="true" 
+	useAutoAcknowledge="false" 
+	xmlns="http://movilitas.com/movilizer/v14">
+    
+    <moveletDelete moveletKey="scanItems" ignoreExtensionKey="true" />
+    
+    <moveletSet>
+    	<movelet 
+    		moveletKey="scanItems" 
+    		initialQuestionKey="q1" 
+    		moveletType="MULTI"  
+    		icon="1" 
+    		visible="true">
+    		
+    		
+    		<!-- Complex Screen 1. Show the information about the scan item -->
+    		<question key="q1" type="5">
+    		
+    			<answer key="q1.a1" clientKey="ck.status" nextQuestionKey="q2" attributeType="8" columnSizeType="ROWS" position="1">
+    				<text>%INFO%</text>
+    			</answer>
+    			
+    			<onEnterAssignment>
+    				setPlaceholder("%TITLE%", $local:literals["title"]);
+    				setPlaceholder("%INFO%", $local:literals["info"]);
+    				
+    				$local:literals["info"] = ""; // Restart the info message after showing it
+    			</onEnterAssignment>
+    			
+    			<complex linearGroupId="cx.scan" linearPos="0" linearHeight="15" groupTitle="%TITLE%" />
+    		</question>
+    		
+    		<!-- Complex Screen 2. Scanner screen -->
+    		<question key="q2" type="14">
+    		
+    			<answer key="q2.a1" nextQuestionKey="q3" attributeType="14" dummyAnswer="true" />
+    			
+    			<text>%SCAN_TEXT%</text>
+    			
+    			<onEnterAssignment>
+    				setPlaceholder("%SCAN_TEXT%", $local:literals["scan"]);
+    				
+    				// External event that use a private C# scanner
+    				call($global:handleSocketServiceEvent)("STARTSCANNER");
+    				
+    				if (count($local:scannedItems) ?eq 0)
+    				{
+    					addAnswer($answer:'q2.a1', 'CK_EMPTY', $local:literals["no_items"]);
+    				}
+    				else
+    				{
+    					addAnswers($answer:'q2.a1', $local:scannedItems);
+    				}
+    				
+    				$local:tmp["stayInThisScreen"] = false;
+    				
+    			</onEnterAssignment>
+    			
+    			<onLeaveOkPrepareAssignment>
+    				$local:tmp["item"] = getQuestionClientKey();
+    			</onLeaveOkPrepareAssignment>
+    			
+    			<onLeaveOkPersistAssignment>
+    				call($global:handleSocketServiceEvent)("STOPSCANNER"); // Stop the external event scanner
+    			</onLeaveOkPersistAssignment>
+    			
+    			<onLeaveBackAssignment>
+    				call($global:handleSocketServiceEvent)("STOPSCANNER"); // Stop the external event scanner
+    				$local:tmp["item"] = null;
+    			</onLeaveBackAssignment>
+    			
+    			<onExternalEvent>
+    				function($ref:evtSrc, $ref:data) 
+    				{
+    					// External event is the private scanner event
+    					if (evtSrc ?eq $local:literals["scanEventId"])
+    					{
+    						scannedItem = data["barcodeData"]; // Data is the reference of the barcode. Is an array defined on my scan driver
+    						if (count($local:scannedItems) ?eq 0)
+    						{
+    							removeAnswerByClientKey($answer:'q2.a1', 'CK_EMPTY');
+    						}
+    						
+    						addAnswer($answer:'q2.a1', scannedItem, scannedItem);
+    						$local:literals["info"] = concat("Scanned item: ", scannedItem);
+    						$local:tmp["stayInThisScreen"] = true;
+    						call($global:handleSocketServiceEvent)("TRIGGEROK"); // Private event that force an Enter in movilizer. On 2.5 there is a MEL method that allows to press enter by code
+    					}
+    				}
+    			</onExternalEvent>
+    			
+    			<complex linearGroupId="cx.scan" linearPos="1" linearHeight="15" groupTitle="%TITLE%" />
+    		</question>
+    		
+    		<!-- Remove item button screen -->
+    		<question key="q3" type="6">
+    		
+    			<answer key="q3.a1" clientKey="ck.remove" nextQuestionKey="q3" attributeType="14" columnSizeType="ROWS" position="0" valueFontStyle="BOLD" labelFontStyle="BOLD" icon="6">
+    				<text>%REMOVE%</text>
+    			</answer>
+    			
+    			<answer key="q3.a2" clientKey="ck.predefined" nextQuestionKey="END" attributeType="72">
+    				<text>0¤0¤0¤</text>
+    				<predefinedValue>X</predefinedValue>
+    			</answer>
+    			
+    			<restriction nextQuestionKey="q3">
+    				<condition>$local:tmp["stayInThisScreen"]</condition>
+    			</restriction>
+    			
+    			<validation position="1" type="WARNING">
+    				<condition>strEquals(getQuestionClientKey(), "ck.remove") ?and !isBlank($local:tmp["item"])</condition>
+    				<text>%VAL%</text>
+    			</validation>
+    			
+    			<onEnterAssignment>
+    				setPlaceholder("%REMOVE%", $local:literals["remove"]);
+    			</onEnterAssignment>
+    			
+    			<onLeaveOkPrepareAssignment>
+    				setPlaceholder("%VAL%", $local:literals["val"]);
+    			</onLeaveOkPrepareAssignment>
+    			
+    			<onLeaveOkPersistAssignment>
+    				if (strEquals(getQuestionClientKey(), "ck.remove") ?and !isBlank($local:tmp["item"]))
+    				{
+    					$local:scannedItems[$local:tmp["item"]] = null;
+    				}
+    				
+    				$local:tmp["item"] = null;
+    			</onLeaveOkPersistAssignment>
+    			
+    			<complex linearGroupId="cx.scan" linearPos="2" linearHeight="15" groupTitle="%TITLE%" />
+    		</question>
+    		
+    		<moveletStartAssignment>
+    			$local:literals = 
+    			{
+    				"title" : "Scan items";
+    				"info" : "";
+    				"remove" : "Remove item";
+    				"scan" : "Scan items";
+    				"val" : "Do you want to delete the following item?";
+    				"no_items" : "No items scanned yet";
+    				"scanEventId" : 331;
+    			};
+    			
+    			$local:scannedItems = {};
+    			
+    			$local:tmp = 
+    			{
+    				"stayInThisScreen" : true;
+    				"item" : null;
+    			};
+    		</moveletStartAssignment>
+    	
+    		<name>Scan items</name>
+    	</movelet>
+    	
+    	<participant participantKey="${#DEV#ParticipantId}" name="${#DEV#ParticipantName}" deviceAddress="${#DEV#DevideAddress}" />
+    </moveletSet>
+</MovilizerRequest>

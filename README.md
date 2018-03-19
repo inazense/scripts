@@ -18,15 +18,15 @@ __[ManejadorMovilizer](/scripts/java/ManejadorMovilizer.java) :__ Clase usada pa
 __[ManejadorProperties](/scripts/java/ManejadorProperties.java) :__ Clase para leer una propiedad concreta de archivos properties usando el patrón Singleton
 
 ### Movilizer
-__[CheckAndUncheckElements]() :__ Pantalla de selección de checkboxes en tablas Movilizer
+__[CheckAndUncheckElements](/scripts/movilizer/CheckAndUncheckElements.mxml) :__ Pantalla de selección de checkboxes en tablas Movilizer
 
-__[ConnectToBluetoothPrinter]() :__ Cómo conectar una impresora Bluetooth desde Movilizer
+__[ConnectToBluetoothPrinter](/scripts/movilizer/ConnectToBluetoothPrinter.mxml) :__ Cómo conectar una impresora Bluetooth desde Movilizer
 
-__[GoogleMapsRequests]() :__ Funciones MEL para trabajar con la API de Google Maps
+__[GoogleMapsRequests](/scripts/movilizer/GoogleMapsRequests.mxml) :__ Funciones MEL para trabajar con la API de Google Maps
 
-__[ScanItems]()__ Pantalla de escaneo de elementos usada en dispositivos Windows CE
+__[ScanItems](/scripts/movilizer/ScanItems.mxml)__ Pantalla de escaneo de elementos usada en dispositivos Windows CE
 
-__[TimeUtils]() :__ Librería MEL para trabajar con tiempos
+__[TimeUtils](/scripts/movilizer/TimeUtils.mxml) :__ Librería MEL para trabajar con tiempos
 
 ### PHP
 __[Ficheros]() :__ Clase para trabajar con ficheros. Actualmente solo lee ficheros de un directorio

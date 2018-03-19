@@ -1,0 +1,58 @@
+<!-- 
+Method used to connect to a Bluetooth printer from Movilizer
+ -->
+<MovilizerRequest 
+	systemId="${#Project#SystemID}" 
+	systemPassword="${#Project#Password}" 
+	numResponses="0" 
+	synchronousResponse="true" 
+	useAutoAcknowledge="false" 
+	xmlns="http://movilitas.com/movilizer/v15">
+	
+	<moveletDelete moveletKey="connectToPrinter" ignoreExtensionKey="true" />
+	
+	<moveletSet>
+		<movelet moveletKey="connectToPrinter" initialQuestionKey="q1">
+		
+			<!-- Just an Epsilon Screen -->
+			<question key="q1" type="41" title="Epsilon Screen" backNavigationAllowed="true">
+				<answer key="q1.a1" nextQuestionKey="END" position="0" />
+			</question>
+			
+			<syncDownloadAssignment>
+				
+				<!-- DESC: Connect with a bluetooth printer and print text using btspp protocol 							-->
+				<!-- IN: 																									-->
+				<!-- 		message. String. Message to print 																-->
+				<!-- 		printerDirection. String. Its the bluetooth direction of the printer. Example: "00037a331f29" 	-->
+				<!-- 		authentication. boolean. Tell us if print needs authentication to connect it 					-->
+				<!-- 		pin. Integer. If authentication is true, you need to pass a pin, if not, this parameter is null -->
+				<!-- OUT: none 																								-->
+				$global:printWithBluetooth = function(message, printerDirection, authentication, pin){
+				
+					parameters = concat(":1;authenticate=", authentication, ";encrypt=false;master=false;pin=", pin);
+					url = concat("btspp://", printerDirection, parameters);
+					
+					showProgress("Please wait. We're printing");
+					btConID = connect(url, null); // Connect with the printer
+					
+					// If connection returns an integer bigger than negative, connection is correct.
+					// If not, there is an error
+					if (btConID ?ge 0){
+						writeTextLine(btConID, message);
+					} 
+					else{
+						warning("Connection is not available");
+					}
+					
+					close(btConID);
+				};
+			
+			</syncDownloadAssignment>
+			
+			<name>Bluetooth Printer</name>
+		</movelet>
+		
+		<participant participantKey="${#DEV#ParticipantId}" name="${#DEV#ParticipantName}" deviceAddress="${#DEV#DevideAddress}" />
+	</moveletSet>
+</MovilizerRequest>

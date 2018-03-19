@@ -1,0 +1,65 @@
+<!--
+Movilizer 2.5 screen used to check / uncheck different values in the same row of a table
+-->
+<MovilizerRequest 
+	systemId="${#Project#SystemID}" 
+	systemPassword="${#Project#Password}" 
+	numResponses="0" 
+	synchronousResponse="true" 
+	useAutoAcknowledge="false" 
+	xmlns="http://movilitas.com/movilizer/v14">
+    
+    <moveletDelete moveletKey="checkedAndUnchecked" ignoreExtensionKey="true" />
+    
+    <moveletSet>
+    	<movelet 
+    		moveletKey="checkedAndUnchecked" 
+    		initialQuestionKey="q1" 
+    		moveletType="MULTI"  
+    		icon="1" 
+    		visible="true">
+    		
+    		<question key="q1" type="9" title="Check and uncheck" tableRowDetailsEnabled="true">
+    			
+    			<answer key="a1" clientKey="ck.a1" nextQuestionKey="END" attributeType="11" dummyAnswer="true" triggerScreenValueChangedEvent="true" colIndex="0">
+    				<text>OK</text>
+    			</answer>
+    			
+    			<answer key="a2" clientKey="ck.a1" nextQuestionKey="END" attributeType="11" dummyAnswer="true" triggerScreenValueChangedEvent="true" colIndex="1">
+    				<text>NOT OK</text>
+    			</answer>
+    			
+    			<answer key="a3" clientKey="ck.a1" nextQuestionKey="END" attributeType="11" dummyAnswer="true" triggerScreenValueChangedEvent="true" colIndex="2">
+    				<text>N/A</text>
+    			</answer>
+    			
+    			<onEnterAssignment>
+    				i = 0;
+    				while (i ?lt 5)
+    				{
+    					addAnswer($answer:'a1', i, '');
+    					addAnswer($answer:'a2', i, '');
+    					addAnswer($answer:'a3', i, '');
+    					i = i + 1;
+    				}
+    			</onEnterAssignment>
+    			
+    			<onScreenValueChangeEvent>
+    				function($ref:answerKey, $ref:clientKey, $ref:value, $ref:data)
+    				{
+    					if (!isBlank(getAnswerValueByClientKey(answerKey, clientKey)))
+    					{
+    						setAnswerValueByClientKey($answer:'a1', clientKey, '');
+    						setAnswerValueByClientKey($answer:'a2', clientKey, '');
+    						setAnswerValueByClientKey($answer:'a3', clientKey, '');
+    						setAnswerValueByClientKey(answerKey, clientKey, 'X');
+    					}
+    				}
+    			</onScreenValueChangeEvent>	
+    		</question>
+    	
+    		<name>Check and uncheck</name>
+    	</movelet>
+    	<participant participantKey="${#DEV#ParticipantId}" name="${#DEV#ParticipantName}" deviceAddress="${#DEV#DevideAddress}" />
+    </moveletSet>
+</MovilizerRequest>
