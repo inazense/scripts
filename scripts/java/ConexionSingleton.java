@@ -3,8 +3,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**
-* Clase usada para generar un objeto Connection a base de datos MySQL siguiendo el patrón Singleton
-*/
+ * Clase usada para generar un objeto Connection a base de datos MySQL siguiendo el patrón Singleton
+ * @author Inazio
+ *
+ */
 public class ConexionSingleton {
 	
 	// Propiedades

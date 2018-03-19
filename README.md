@@ -9,13 +9,13 @@ Porque necesito un sitio para organizarme las porciones de código
 - [Varios](#varios)
 
 ### Java
-__[ConexionSingleton](scripts/java/ConexionSingleton.java) :__ Clase usada para devolver objetos Connection a una base de datos MySQL implementando el patrón Singleton
+__[ConexionSingleton](/scripts/java/ConexionSingleton.java) :__ Clase usada para devolver objetos Connection a una base de datos MySQL implementando el patrón Singleton
 
-__[LectorCSV]() :__ Clase para leer ficheros CSV simples y complejos (requiere OpenCSV para estos últimos)
+__[LectorCSV](/scripts/java/LectorCSV.java) :__ Clase para leer ficheros CSV simples y complejos (requiere OpenCSV para estos últimos)
 
-__[ManejadorMovilizer]() :__ Clase usada para generar objetos Movilizer. Actualmente en la versión 2.5
+__[ManejadorMovilizer](/scripts/java/ManejadorMovilizer.java) :__ Clase usada para generar objetos Movilizer. Actualmente en la versión 2.5
 
-__[ManejadorProperties]() :__ Clase para leer una propiedad concreta de archivos properties usando el patrón Singleton
+__[ManejadorProperties](/scripts/java/ManejadorProperties.java) :__ Clase para leer una propiedad concreta de archivos properties usando el patrón Singleton
 
 ### Movilizer
 __[CheckAndUncheckElements]() :__ Pantalla de selección de checkboxes en tablas Movilizer
