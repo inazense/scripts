@@ -29,11 +29,11 @@ __[ScanItems](/scripts/movilizer/ScanItems.mxml)__ Pantalla de escaneo de elemen
 __[TimeUtils](/scripts/movilizer/TimeUtils.mxml) :__ Librería MEL para trabajar con tiempos
 
 ### PHP
-__[Ficheros]() :__ Clase para trabajar con ficheros. Actualmente solo lee ficheros de un directorio
+__[Ficheros](/scripts/php/Ficheros.php) :__ Clase para trabajar con ficheros. Actualmente solo lee ficheros de un directorio
 
-__[GoogleMapsGeo]() :__ Clase para trabajar con la geocodificación con la API de Google Maps
+__[GoogleMapsGeo](/scripts/php/GoogleMapsGeo.php) :__ Clase para trabajar con la geocodificación con la API de Google Maps
 
-__[MailSender]() :__ Clase para realizar envíos de correos electrónicos. Requiere phpmailer para envíos complejos
+__[MailSender](/scripts/php/MailSender.php) :__ Clase para realizar envíos de correos electrónicos. Requiere phpmailer para envíos complejos
 
 ### Python
 __[barraProgresoTerminal]() :__ Genera una barra de progreso en la terminal
@@ -50,4 +50,3 @@ __[Atajos de teclado para Notepad++]()__
 __[Cheatsheet comandos GIT]()__
 
 __[EliminarOneDrive]() :__ Fichero .cmd para forzar la desinstalación de OneDrive de Windows 10
-
