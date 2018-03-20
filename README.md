@@ -45,8 +45,8 @@ __[googleMapsAPI](/scripts/python/googleMapsAPI.py) :__ Clase para trabajar con 
 __[LectorXLSX](/scripts/python/LectorXLSX.py) :__ Lector de ficheros XLSX con Python3
 
 ### Varios
-__[Atajos de teclado para Notepad++]()__
+__[Atajos de teclado para Notepad++](/scripts/varios/atajosNotepad++.md)__
 
-__[Cheatsheet comandos GIT]()__
+__[Cheatsheet comandos GIT](/scripts/varios/cheatsheetGit.md)__
 
-__[EliminarOneDrive]() :__ Fichero .cmd para forzar la desinstalación de OneDrive de Windows 10
+__[EliminarOneDrive](/scripts/varios/eliminarOneDrive.cmd) :__ Fichero .cmd para forzar la desinstalación de OneDrive de Windows 10
