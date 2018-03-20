@@ -36,13 +36,13 @@ __[GoogleMapsGeo](/scripts/php/GoogleMapsGeo.php) :__ Clase para trabajar con la
 __[MailSender](/scripts/php/MailSender.php) :__ Clase para realizar envíos de correos electrónicos. Requiere phpmailer para envíos complejos
 
 ### Python
-__[barraProgresoTerminal]() :__ Genera una barra de progreso en la terminal
+__[barraProgresoTerminal](/scripts/python/barraProgresoTerminal.py) :__ Genera una barra de progreso en la terminal
 
-__[clonarRepositorio]() :__ Clonación de todas las ramas de un repositorio git, tanto público como privado
+__[clonarRepositorio](/scripts/python/clonarRepositorio.py) :__ Clonación de todas las ramas de un repositorio git, tanto público como privado
 
-__[googleMapsAPI]() :__ Clase para trabajar con la API de Google Maps
+__[googleMapsAPI](/scripts/python/googleMapsAPI.py) :__ Clase para trabajar con la API de Google Maps
 
-__[LectorXLSX]() :__ Lector de ficheros XLSX con Python3
+__[LectorXLSX](/scripts/python/LectorXLSX.py) :__ Lector de ficheros XLSX con Python3
 
 ### Varios
 __[Atajos de teclado para Notepad++]()__
