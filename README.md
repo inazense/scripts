@@ -44,6 +44,8 @@ __[googleMapsAPI](/scripts/python/googleMapsAPI.py) :__ Clase para trabajar con 
 
 __[LectorXLSX](/scripts/python/LectorXLSX.py) :__ Lector de ficheros XLSX con Python3
 
+__[ManejadorXamppUbuntu](/scripts/python/manejadorXamppUbuntu.py)__ Arranca / detiene los servicios de XAMPP en Ubuntu
+
 ### Varios
 __[Atajos de teclado para Notepad++](/scripts/varios/atajosNotepad++.md)__
 
