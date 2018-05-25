@@ -22,6 +22,8 @@ __[CheckAndUncheckElements](/scripts/movilizer/CheckAndUncheckElements.mxml) :__
 
 __[ConnectToBluetoothPrinter](/scripts/movilizer/ConnectToBluetoothPrinter.mxml) :__ Cómo conectar una impresora Bluetooth desde Movilizer
 
+__[ConnectWebBrowser](/scripts/movilizer/ConnectWebBrowser.mxml) :__ Abre una página web en el navegador por defecto de Windows desde Movilizer
+
 __[GoogleMapsRequests](/scripts/movilizer/GoogleMapsRequests.mxml) :__ Funciones MEL para trabajar con la API de Google Maps
 
 __[ScanItems](/scripts/movilizer/ScanItems.mxml)__ Pantalla de escaneo de elementos usada en dispositivos Windows CE
