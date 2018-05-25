@@ -1,0 +1,44 @@
+<!-- 
+Open website on default web browser
+from Movilizer on Windows SO
+-->
+<MovilizerRequest
+    systemId="${#DEV#SystemID}" 
+    systemPassword="${#DEV#Password}" 
+    numResponses="0" 
+    synchronousResponse="true" 
+    useAutoAcknowledge="false" 
+    xmlns="http://movilitas.com/movilizer/v15"> 
+    
+    <moveletDelete moveletKey="m.connectWebsite" ignoreExtensionKey="true" />
+    
+    <moveletSet>
+    
+    	<movelet 
+    		moveletKey="m.connectWebsite" 
+    		initialQuestionKey="q1" 
+    		moveletType="MULTI"  
+    		icon="1" 
+    		visible="true">
+    		
+    		<question key="q1" type="0" title="TEST">
+    		
+    			<answer key="q1.a1" clientKey="ck.1" nextQuestionKey="END">
+    				<text>Connect to website</text>
+    			</answer>
+    			
+    			<onLeaveOkPersistAssignment>
+    				website = 'http://www.google.com';
+    				connectionURI = concat('exec://cmd /c start ', website);
+    				test = connect(connectionURI, null);
+    			</onLeaveOkPersistAssignment>
+    		</question>
+    	
+    		<name>connect website</name>
+    	</movelet>    
+    	<participant 
+    		participantKey="${#DEV#ParticipantKey}" 
+    		name="${#DEV#ParticipantName}" 
+    		deviceAddress="${#DEV#DeviceAddress}" />
+    </moveletSet>
+</MovilizerRequest>
