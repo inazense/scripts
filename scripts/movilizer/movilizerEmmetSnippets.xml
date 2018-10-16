@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="false" name="answer">&lt;answer key="${cursor}" clientKey="" nextQuestionKey="" &gt;&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="answer">&lt;answer key="${cursor}" clientKey="" nextQuestionKey="" &gt;&#13;
 	&lt;text&gt;&lt;/text&gt;&#13;
 &lt;/answer&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="answer:dummy">&lt;answer key="${cursor}" clientKey="" nextQuestionKey="" dummyAnswer="true"  /&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="category">&lt;category index="0" icon="0"&gt;&#13;
 	&lt;name&gt;${cursor}&lt;/name&gt;&#13;
@@ -17,13 +17,21 @@
 	initialQuestionKey="" &#13;
 	validTillDate="2050-12-31T23:59:59+01:00"&gt;&#13;
 &#13;
-&lt;/movelet&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="moveletDelete">&lt;moveletDelete moveletKey="${cursor}"/&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="movilizer">&lt;MovilizerRequest &#13;
+&lt;/movelet&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="moveletDelete">&lt;moveletDelete moveletKey="${cursor}" ignoreExtensionKey="true" /&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="false" name="movilizer:15">&lt;MovilizerRequest &#13;
 	systemId="${#DEV#SystemID}" &#13;
 	systemPassword="${#DEV#Password}" &#13;
 	useAutoAcknowledge="false" &#13;
 	numResponses="0" &#13;
 	synchronousResponse="true" &#13;
 	xmlns="http://movilitas.com/movilizer/v15"&gt;&#13;
+	${cursor}&#13;
+&lt;/MovilizerRequest&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="movilizer:16">&lt;MovilizerRequest &#13;
+	systemId="${#DEV#SystemID}" &#13;
+	systemPassword="${#DEV#Password}" &#13;
+	useAutoAcknowledge="false" &#13;
+	numResponses="0" &#13;
+	synchronousResponse="true" &#13;
+	xmlns="http://movilitas.com/movilizer/v16"&gt;&#13;
 	${cursor}&#13;
 &lt;/MovilizerRequest&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="onEnter">&lt;onEnterAssignment&gt;&#13;
 	${cursor}&#13;
@@ -32,11 +40,11 @@
 	{&#13;
 		${cursor}&#13;
 	}&#13;
-&lt;/onExternalEvent&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="onPersist">&lt;onPersistAssignment&gt;&#13;
+&lt;/onExternalEvent&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="onPersist">&lt;onLeaveOkPersistAssignment&gt;&#13;
 	${cursor}&#13;
-&lt;/onPersistAssignment&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="onPrepare">&lt;onPrepareAssignment&gt;&#13;
+&lt;/onLeaveOkPersistAssignment&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="onPrepare">&lt;onLeaveOkPrepareAssignment&gt;&#13;
 	${cursor}&#13;
-&lt;/onPrepareAssignment&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="onScreen">&lt;onScreenValueChangeEvent&gt;&#13;
+&lt;/onLeaveOkPrepareAssignment&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="onScreen">&lt;onScreenValueChangeEvent&gt;&#13;
 	function($ref:answerKey, $ref:clientKey, $ref:value, $ref:data)&#13;
 	{&#13;
 		${cursor}&#13;
@@ -49,7 +57,7 @@
 &#13;
 &lt;/question&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="restriction">&lt;restriction nextQuestionKey="${cursor}"&gt;&#13;
 	&lt;condition&gt;&lt;/condition&gt;&#13;
-&lt;/restriction&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="false" name="validation">&lt;validation  type="${cursor}" position=""&gt;&#13;
+&lt;/restriction&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="validation">&lt;validation type="${cursor}" position=""&gt;&#13;
 	&lt;condition&gt;&lt;/condition&gt;&#13;
 	&lt;text&gt;&lt;/text&gt;&#13;
 &lt;/validation&gt;</template></templates>
