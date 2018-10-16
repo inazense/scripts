@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="answer">&lt;answer key="${cursor}" clientKey="" nextQuestionKey="" &gt;&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="false" name="answer">&lt;answer key="${cursor}" clientKey="" nextQuestionKey="" &gt;&#13;
 	&lt;text&gt;&lt;/text&gt;&#13;
 &lt;/answer&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="answer:dummy">&lt;answer key="${cursor}" clientKey="" nextQuestionKey="" dummyAnswer="true"  /&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="category">&lt;category index="0" icon="0"&gt;&#13;
 	&lt;name&gt;${cursor}&lt;/name&gt;&#13;
@@ -42,14 +42,14 @@
 		${cursor}&#13;
 	}&#13;
 &lt;/onScreenValueChangeEvent&gt;&#13;
-                       </template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="participant">&lt;participant&#13;
-	deviceAddress="${#DEV#DeviceAddress}"&#13;
-	participantKey="${#DEV#ParticipantKey}"&#13;
-	name="${#DEV#ParticipantName}" /&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="question">&lt;question key="${cursor}" type=""&gt;&#13;
+                       </template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="participant">&lt;participant &#13;
+	deviceAddress="${#DEV#DeviceAddress}" &#13;
+	participantKey="${#DEV#ParticipantKey}" &#13;
+	name="${#DEV#ParticipantName}" /&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="question">&lt;question key="${cursor}" type="" title=""&gt;&#13;
 &#13;
 &lt;/question&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="restriction">&lt;restriction nextQuestionKey="${cursor}"&gt;&#13;
 	&lt;condition&gt;&lt;/condition&gt;&#13;
-&lt;/restriction&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="validation">&lt;validation  type="${cursor}" position=""&gt;&#13;
+&lt;/restriction&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="false" name="validation">&lt;validation  type="${cursor}" position=""&gt;&#13;
 	&lt;condition&gt;&lt;/condition&gt;&#13;
 	&lt;text&gt;&lt;/text&gt;&#13;
 &lt;/validation&gt;</template></templates>
