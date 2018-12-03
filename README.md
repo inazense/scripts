@@ -60,3 +60,5 @@ __[Atajos de teclado para Notepad++](/scripts/varios/atajosNotepad++.md)__
 __[Cheatsheet comandos GIT](/scripts/varios/cheatsheetGit.md)__
 
 __[EliminarOneDrive](/scripts/varios/eliminarOneDrive.cmd) :__ Fichero .cmd para forzar la desinstalación de OneDrive de Windows 10
+
+__[RestaurarVisorFotos](/scripts/varios/restaurarVisorFotos.reg) :__ Habilita el uso del visor de fotos de Windows 7 en Windows 10. Requiere reinicio del sistema operativo
