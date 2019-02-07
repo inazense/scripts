@@ -24,7 +24,7 @@
 | __git checkout__ --fichero | Remplaza la copia actual con la última copia de HEAD |
 
 ### Cambiar la información del autor de varios commits
-1. git clone --bare URL_REPOSITORIO
+1. `git clone --bare URL_REPOSITORIO`
 2. Copiar el siguiente script configurando las siguientes variables:
   - __OLD_EMAIL__ Correo electrónico antiguo
   - __CORRECT_NAME__ Nombre del autor correcto
