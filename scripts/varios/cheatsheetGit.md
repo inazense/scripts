@@ -22,3 +22,33 @@
 | __git tag__ tag commitID | Crea una etiqueta |
 | __git log__ | Obtiene los ID de los commits |
 | __git checkout__ --fichero | Remplaza la copia actual con la última copia de HEAD |
+
+### Cambiar la información del autor de varios commits
+1. git clone --bare URL_REPOSITORIO
+2. Copiar el siguiente script configurando las siguientes variables:
+  - __OLD_EMAIL__ Correo electrónico antiguo
+  - __CORRECT_NAME__ Nombre del autor correcto
+  - __CORRECT_EMAIL__ Correo electrónico correcto
+`#!/bin/sh
+
+git filter-branch --env-filter '
+OLD_EMAIL="your-old-email@example.com"
+CORRECT_NAME="Your Correct Name"
+CORRECT_EMAIL="your-correct-email@example.com"
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_COMMITTER_NAME="$CORRECT_NAME"
+    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_AUTHOR_NAME="$CORRECT_NAME"
+    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags`
+3. Pulsa ENTER para lanzar el script
+4. Revisa el histórico de GIT para detectar errores
+5. Pushea los cambios con: `git push --force --tags origin 'refs/heads/*'`
+6. Borra el clon temporal:
+`cd ..
+rm -rf REPO.git`
