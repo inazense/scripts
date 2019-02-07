@@ -29,7 +29,8 @@
   - __OLD_EMAIL__ Correo electrónico antiguo
   - __CORRECT_NAME__ Nombre del autor correcto
   - __CORRECT_EMAIL__ Correo electrónico correcto
-`#!/bin/sh
+
+<pre>#!/bin/sh
 
 git filter-branch --env-filter '
 OLD_EMAIL="your-old-email@example.com"
@@ -45,7 +46,8 @@ then
     export GIT_AUTHOR_NAME="$CORRECT_NAME"
     export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
 fi
-' --tag-name-filter cat -- --branches --tags`
+' --tag-name-filter cat -- --branches --tags</pre>
+
 3. Pulsa ENTER para lanzar el script
 4. Revisa el histórico de GIT para detectar errores
 5. Pushea los cambios con: `git push --force --tags origin 'refs/heads/*'`
