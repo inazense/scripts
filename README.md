@@ -55,12 +55,12 @@ __[LectorXLSX](/scripts/python/LectorXLSX.py) :__ Lector de ficheros XLSX con Py
 __[ManejadorXamppUbuntu](/scripts/python/manejadorXamppUbuntu.py)__ Arranca / detiene los servicios de XAMPP en Ubuntu
 
 ### Varios
+__[Anclar Papelera al dock de Ubuntu](/scripts/varios/PapeleraDockUbuntu.sh) :__ Fichero .sh para permitir anclar la papelera al dock de Ubuntu
+
 __[Atajos de teclado para Notepad++](/scripts/varios/atajosNotepad++.md)__
 
 __[Cheatsheet comandos GIT](/scripts/varios/cheatsheetGit.md)__
 
 __[EliminarOneDrive](/scripts/varios/eliminarOneDrive.cmd) :__ Fichero .cmd para forzar la desinstalación de OneDrive de Windows 10
-
-__[Anclar Papelera al dock de Ubuntu](/scripts/varios/PapeleraDockUbuntu.sh) :__ Fichero .sh para permitir anclar la papelera al dock de Ubuntu
 
 __[RestaurarVisorFotos](/scripts/varios/restaurarVisorFotos.reg) :__ Habilita el uso del visor de fotos de Windows 7 en Windows 10. Requiere reinicio del sistema operativo
