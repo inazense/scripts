@@ -57,6 +57,8 @@ __[ManejadorXamppUbuntu](/scripts/python/manejadorXamppUbuntu.py)__ Arranca / de
 ### Varios
 __[Anclar Papelera al dock de Ubuntu](/scripts/varios/PapeleraDockUbuntu.sh) :__ Fichero .sh para permitir anclar la papelera al dock de Ubuntu
 
+__[Atajos de teclado para IntelliJ](/scripts/varios/intellij-shortcuts.md)__
+
 __[Atajos de teclado para Notepad++](/scripts/varios/atajosNotepad++.md)__
 
 __[Cheatsheet comandos GIT](/scripts/varios/cheatsheetGit.md)__
