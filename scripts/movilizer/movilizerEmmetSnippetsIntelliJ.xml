@@ -1,0 +1,192 @@
+<templateSet group="Movilizer">
+  <template name="answer" value="&lt;answer key=&quot;$VAR0$&quot; clientKey=&quot;$VAR1$&quot; nextQuestionKey=&quot;$VAR2$&quot; &gt;&#10;&#9;&lt;text&gt;$END$&lt;/text&gt;&#10;&lt;/answer&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="answer:dummy" value="&lt;answer key=&quot;$VAR0$&quot; clientKey=&quot;$VAR1$&quot; nextQuestionKey=&quot;$END$&quot; dummyAnswer=&quot;true&quot;  /&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="category" value="&lt;category index=&quot;$VAR0$&quot; icon=&quot;$VAR1$&quot;&gt;&#10;&#9;&lt;name&gt;$END$&lt;/name&gt;&#10;&lt;/category&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="complex" value="&lt;complex &#10;&#9;groupTitle=&quot;$VAR0$&quot; &#10;&#9;linearGroupId=&quot;$VAR1$&quot; &#10;&#9;linearPos=&quot;$VAR2$&quot; &#10;&#9;linearInnerScrollbar=&quot;$VAR3$&quot; &#10;&#9;linearHeight=&quot;$VAR4$&quot; &#10;&#9;gridGroupId=&quot;$VAR5$&quot; &#10;&#9;gridPosX=&quot;$VAR6$&quot; &#10;&#9;gridPosY=&quot;$VAR7$&quot; &#10;&#9;gridHorizontalLayout=&quot;$VAR8$&quot; &#10;&#9;gridInnerScrollbar=&quot;$VAR9$&quot; &#10;&#9;gridHeight=&quot;$VAR10$&quot; &#10;&#9;gridWidth=&quot;$END$&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR5" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR6" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR7" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR8" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR9" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR10" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="complex:linear" value="&lt;complex &#10;&#9;groupTitle=&quot;$VAR0$&quot; &#10;&#9;linearGroupId=&quot;$VAR1$&quot; &#10;&#9;linearPos=&quot;$VAR2$&quot; &#10;&#9;linearInnerScrollbar=&quot;$VAR3$&quot; &#10;&#9;linearHeight=&quot;$END$&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="document" value="&lt;document pool=&quot;$END$&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sync" value="&lt;syncDownloadAssignment&gt;&#10;&#9;$END$&#10;&lt;/syncDownloadAssignment&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="epsilon" value="&lt;question type=&quot;41&quot; key=&quot;$VAR0$&quot;&gt;&#10;&#9;&lt;answer key=&quot;$VAR1$&quot; nextQuestionKey=&quot;$VAR2$&quot;  /&gt;&#10;&#10;&#9;&lt;onEnterAssignment&gt;&#10;&#9;    $END$&#10;&#9;&lt;/onEnterAssignment&gt;&#10;&lt;/question&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="masterdata" value="&lt;masterdata pool=&quot;$VAR0$&quot;  group=&quot;$END$&quot;  /&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="movelet" value="&lt;movelet &#10;&#9;moveletKey=&quot;$VAR0$&quot; &#10;&#9;icon=&quot;$VAR1$&quot; &#10;&#9;moveletType=&quot;MULTI&quot; &#10;&#9;initialQuestionKey=&quot;$VAR2$&quot; &#10;&#9;validTillDate=&quot;2050-12-31T23:59:59+01:00&quot;&gt;&#10;    $END$&#10;&lt;/movelet&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="moveletDelete" value="&lt;moveletDelete moveletKey=&quot;$END$&quot; ignoreExtensionKey=&quot;true&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="movilizer:15" value="&lt;MovilizerRequest &#10;&#9;systemId=&quot;${#DEV#SystemID}&quot; &#10;&#9;systemPassword=&quot;${#DEV#Password}&quot; &#10;&#9;useAutoAcknowledge=&quot;false&quot; &#10;&#9;numResponses=&quot;0&quot; &#10;&#9;synchronousResponse=&quot;true&quot; &#10;&#9;xmlns=&quot;http://movilitas.com/movilizer/v15&quot;&gt;&#10;&#9;$END$&#10;&lt;/MovilizerRequest&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="movilizer:16" value="&lt;MovilizerRequest &#10;&#9;systemId=&quot;${#DEV#SystemID}&quot; &#10;&#9;systemPassword=&quot;${#DEV#Password}&quot; &#10;&#9;useAutoAcknowledge=&quot;false&quot; &#10;&#9;numResponses=&quot;0&quot; &#10;&#9;synchronousResponse=&quot;true&quot; &#10;&#9;xmlns=&quot;http://movilitas.com/movilizer/v16&quot;&gt;&#10;&#9;$END$&#10;&lt;/MovilizerRequest&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="onEnter" value="&lt;onEnterAssignment&gt;&#10;&#9;$END$&#10;&lt;/onEnterAssignment&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="onExternal" value="&lt;onExternalEvent&gt;&#10;&#9;function($ref:evtSrc, $ref:data)&#10;&#9;{&#10;&#9;&#9;$END$&#10;&#9;}&#10;&lt;/onExternalEvent&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="onPersist" value="&lt;onLeaveOkPersistAssignment&gt;&#10;&#9;$END$&#10;&lt;/onLeaveOkPersistAssignment&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="onPrepare" value="&lt;onLeaveOkPrepareAssignment&gt;&#10;&#9;$END$&#10;&lt;/onLeaveOkPrepareAssignment&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="onScreen" value="&lt;onScreenValueChangeEvent&gt;&#10;&#9;function($ref:answerKey, $ref:clientKey, $ref:value, $ref:data)&#10;&#9;{&#10;&#9;&#9;$END$&#10;&#9;}&#10;&lt;/onScreenValueChangeEvent&gt;&#10;                       " toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="participant" value="&lt;participant &#10;&#9;deviceAddress=&quot;${#DEV#DeviceAddress}&quot; &#10;&#9;participantKey=&quot;${#DEV#ParticipantKey}&quot; &#10;&#9;name=&quot;${#DEV#ParticipantName}&quot; /&gt;$END$" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="question" value="&lt;question key=&quot;$VAR0$&quot; type=&quot;$VAR1$&quot; title=&quot;$VAR2$&quot;&gt;&#10;    $END$&#10;&lt;/question&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="restriction" value="&lt;restriction nextQuestionKey=&quot;$VAR0$&quot;&gt;&#10;&#9;&lt;condition&gt;$END$&lt;/condition&gt;&#10;&lt;/restriction&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="validation" value="&lt;validation type=&quot;$VAR0$&quot; position=&quot;$VAR1$&quot;&gt;&#10;&#9;&lt;condition&gt;$VAR2$&lt;/condition&gt;&#10;&#9;&lt;text&gt;$END$&lt;/text&gt;&#10;&lt;/validation&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="MXML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+</templateSet>
