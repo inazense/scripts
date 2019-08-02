@@ -26,7 +26,9 @@ __[ConnectToBluetoothPrinter](/scripts/movilizer/ConnectToBluetoothPrinter.mxml)
 
 __[ConnectWebBrowser](/scripts/movilizer/ConnectWebBrowser.mxml) :__ Abre una página web en el navegador por defecto de Windows desde Movilizer
 
-__[Emmet snippets](/scripts/movilizer/movilizerEmmetSnippets.xml) :__ Snippets para atajos de teclado con Emmet en Eclipse
+__[Emmet snippets - Eclipse](/scripts/movilizer/movilizerEmmetSnippets.xml) :__ Snippets para atajos de teclado con Emmet en Eclipse
+
+__[Emmet snippets - IntelliJ](/scripts/movilizer/movilizerEmmetSnippetsIntelliJ.xml) :__ Snippets para atajos de teclado con Emmet en IntelliJ
 
 __[GoogleMapsRequests](/scripts/movilizer/GoogleMapsRequests.mxml) :__ Funciones MEL para trabajar con la API de Google Maps
 
