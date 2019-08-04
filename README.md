@@ -3,6 +3,7 @@ Porque necesito un sitio para organizarme las porciones de código
 
 ## Categorías
 - [Java](#java)
+- [MAF](#maf)
 - [Movilizer](#movilizer)
 - [PHP](#php)
 - [Python](#python)
@@ -18,6 +19,17 @@ __[Manejador Log4j](/scripts/java/ManejadorLog4j) :__ Clase y fichero log4j.prop
 __[ManejadorMovilizer](/scripts/java/ManejadorMovilizer.java) :__ Clase usada para generar objetos Movilizer. Actualmente en la versión 2.5
 
 __[ManejadorProperties](/scripts/java/ManejadorProperties.java) :__ Clase para leer una propiedad concreta de archivos properties usando el patrón Singleton
+
+### MAF
+__[Datacontainer. Lectura](/scripts/maf/lecturaDatacontainer.groovy)__ 
+
+__[Datacontainer online. Lectura](/scripts/maf/lecturaDatacontainerOnline.groovy) :__ Lectura de datacontainer online y respuesta a la movelet
+
+__[Log](/scripts/maf/log.groovy) :__ Creación de logs en el portal
+
+__[Masterdata. Lectura](/scripts/maf/lecturaMasterdata.groovy) :__ Lectura de masterdata conociendo previamente la clave
+
+__[Masterdata. Query](/scripts/maf/queryMasterdata.groovy)__
 
 ### Movilizer
 __[CheckAndUncheckElements](/scripts/movilizer/CheckAndUncheckElements.mxml) :__ Pantalla de selección de checkboxes en tablas Movilizer
