@@ -21,6 +21,12 @@ __[ManejadorMovilizer](/scripts/java/ManejadorMovilizer.java) :__ Clase usada pa
 __[ManejadorProperties](/scripts/java/ManejadorProperties.java) :__ Clase para leer una propiedad concreta de archivos properties usando el patrón Singleton
 
 ### MAF
+__[CounterBO. Creación](/scripts/maf/creacionCounterBO.groovy) :__ Creación de CounterBO y persistencia en la nube
+
+__[CounterBO. Lectura de Counter de la nube](/scripts/maf/lecturaCounterBO.groovy) :__ 
+
+__[CounterBO. Bloquear en transacción](/scripts/maf/counterBloqueado.groovy) :__ Bloqueo del counter en una transacción para evitar iteraciones no deseadas
+
 __[Datacontainer. Lectura](/scripts/maf/lecturaDatacontainer.groovy)__ 
 
 __[Datacontainer online. Lectura](/scripts/maf/lecturaDatacontainerOnline.groovy) :__ Lectura de datacontainer online y respuesta a la movelet
