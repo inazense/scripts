@@ -31,6 +31,8 @@ __[Masterdata. Lectura](/scripts/maf/lecturaMasterdata.groovy) :__ Lectura de ma
 
 __[Masterdata. Query](/scripts/maf/queryMasterdata.groovy)__
 
+__[Masterdata. Creación](/scripts/maf/creacionMasterdata.groovy)__
+
 ### Movilizer
 __[CheckAndUncheckElements](/scripts/movilizer/CheckAndUncheckElements.mxml) :__ Pantalla de selección de checkboxes en tablas Movilizer
 
