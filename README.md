@@ -43,6 +43,8 @@ __[Masterdata. Query](/scripts/maf/queryMasterdata.groovy)__
 
 __[Masterdata. Creación](/scripts/maf/creacionMasterdata.groovy)__
 
+__[SSCC Generator](/scripts/maf/ssccGenerator.groovy) :__ Clase para trabajar con la generación de códigos SSCC
+
 ### Movilizer
 __[CheckAndUncheckElements](/scripts/movilizer/CheckAndUncheckElements.mxml) :__ Pantalla de selección de checkboxes en tablas Movilizer
 
