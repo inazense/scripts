@@ -21,6 +21,8 @@ __[ManejadorMovilizer](/scripts/java/ManejadorMovilizer.java) :__ Clase usada pa
 __[ManejadorProperties](/scripts/java/ManejadorProperties.java) :__ Clase para leer una propiedad concreta de archivos properties usando el patrón Singleton
 
 ### MAF
+__[Colas MAF](/scripts/maf/manejadorColasMAF.groovy) :__ Cómo manejar colas MAF en nodos Cassandra
+
 __[CounterBO. Creación](/scripts/maf/creacionCounterBO.groovy) :__ Creación de CounterBO y persistencia en la nube
 
 __[CounterBO. Lectura de Counter de la nube](/scripts/maf/lecturaCounterBO.groovy) :__ 
