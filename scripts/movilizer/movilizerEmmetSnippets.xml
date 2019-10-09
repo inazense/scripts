@@ -19,7 +19,7 @@
 	linearGroupId="" &#13;
 	linearPos="" &#13;
 	linearInnerScrollbar="" &#13;
-	linearHeight="" /&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="document">&lt;document pool="${cursor}" /&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="download">&lt;syncDownloadAssignment&gt;&#13;
+	linearHeight="" /&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="delete">&lt;moveletDelete moveletKey="${cursor}" ignoreExtensionKey="true" /&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="document">&lt;document pool="${cursor}" /&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="download">&lt;syncDownloadAssignment&gt;&#13;
 	${cursor}&#13;
 &lt;/syncDownloadAssignment&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="epsilon">&lt;question type="41" key="${cursor}"&gt;&#13;
 	&lt;answer key="" nextQuestionKey=""  /&gt;&#13;
@@ -34,7 +34,8 @@
 	initialQuestionKey="" &#13;
 	validTillDate="2050-12-31T23:59:59+01:00"&gt;&#13;
 &#13;
-&lt;/movelet&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="moveletDelete">&lt;moveletDelete moveletKey="${cursor}" ignoreExtensionKey="true" /&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="movilizer:15">&lt;MovilizerRequest &#13;
+	&lt;name&gt;&lt;/name&gt;&#13;
+&lt;/movelet&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="movilizer:15">&lt;MovilizerRequest &#13;
 	systemId="${#DEV#SystemID}" &#13;
 	systemPassword="${#DEV#Password}" &#13;
 	useAutoAcknowledge="false" &#13;
@@ -74,7 +75,22 @@
 &#13;
 &lt;/question&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="restriction">&lt;restriction nextQuestionKey="${cursor}"&gt;&#13;
 	&lt;condition&gt;&lt;/condition&gt;&#13;
-&lt;/restriction&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="validation">&lt;validation type="${cursor}" position=""&gt;&#13;
+&lt;/restriction&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="moveletSet" enabled="true" name="set">&lt;moveletSet&gt;&#13;
+	&lt;movelet &#13;
+		moveletKey="${cursor}" &#13;
+		icon="1" &#13;
+		moveletType="MULTI" &#13;
+		initialQuestionKey="" &#13;
+		validTillDate="2050-12-31T23:59:59+01:00"&gt;&#13;
+&#13;
+		&lt;name&gt;&lt;/name&gt;&#13;
+	&lt;/movelet&gt;&#13;
+	&#13;
+	&lt;participant &#13;
+		deviceAddress="${#DEV#DeviceAddress}" &#13;
+		participantKey="${#DEV#ParticipantKey}" &#13;
+		name="${#DEV#ParticipantName}" /&gt;&#13;
+&lt;/moveletSet&gt;</template><template autoinsert="true" context="io.emmet.eclipse.templates.html" deleted="false" description="" enabled="true" name="validation">&lt;validation type="${cursor}" position=""&gt;&#13;
 	&lt;condition&gt;&lt;/condition&gt;&#13;
 	&lt;text&gt;&lt;/text&gt;&#13;
 &lt;/validation&gt;</template></templates>
