@@ -28,8 +28,6 @@
 
 #### Extensiones
 
-|Nombre de extensión|
-|---|
 - Auto Close Tag
 - Auto Rename Tag
 - Better Comments
@@ -90,11 +88,9 @@
 }
 ```
 
-### Sublime Text
+### Sublime Text
 
 #### Extensiones
-- Nombre de extensión
-|---|
 - AdvanceNewFile
 - AutoFileName
 - Compare Side-by-side
