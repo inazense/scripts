@@ -2,7 +2,7 @@
 
 ## Aplicaciones a instalar
 |Aplicación|
-
+|---|
 |Chrome|
 
 |Eclipse|
@@ -44,6 +44,9 @@
 ### Visual Studio Code
 
 #### Extensiones
+
+|Nombre de extensión|
+|---|
 - Auto Close Tag
 
 - Auto Rename Tag
@@ -116,6 +119,8 @@
 ### Sublime Text
 
 #### Extensiones
+- Nombre de extensión
+|---|
 - AdvanceNewFile
 
 - AutoFileName
