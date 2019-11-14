@@ -2,23 +2,41 @@
 
 ## Aplicaciones a instalar
 |Aplicación|
+
 |Chrome|
+
 |Eclipse|
+
 |Spotify|
+
 |Visual Studio Code|
+
 |Sublime Text|
+
 |JDK|
+
 |Word|
+
 |Excel|
+
 |Skype|
+
 |Photoshop|
+
 |League of legends|
+
 |Popcorn Time|
+
 |Calibre|
+
 |Git|
+
 |Maven|
+
 |Python|
+
 |Sourcetree|
+
 |Tor browser|
 
 ## Configuración de software
@@ -27,14 +45,23 @@
 
 #### Extensiones
 - Auto Close Tag
+
 - Auto Rename Tag
+
 - Better Comments
+
 - Bracket Pair Colorized
+
 - Git history
+
 - IntelliSense for CSS class names in HTML
+
 - Path Intellisense
+
 - Python
+
 - VS Color Picker
+
 - vscode icons
 
 #### Preferences JSON
@@ -90,10 +117,17 @@
 
 #### Extensiones
 - AdvanceNewFile
+
 - AutoFileName
+
 - Compare Side-by-side
+
 - Emmet
+
 - IndentXML
+
 - Local History
+
 - MarkdownPreview
+
 - SidebarEnhancements
