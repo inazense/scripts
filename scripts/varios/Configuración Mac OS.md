@@ -21,6 +21,7 @@
 |Python|
 |Sourcetree|
 |Tor browser|
+|Pasta|
 
 ## Configuración de software
 
