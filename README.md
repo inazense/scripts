@@ -76,6 +76,8 @@ __[clonarRepositorio](/scripts/python/clonarRepositorio.py) :__ Clonación de to
 
 __[googleMapsAPI](/scripts/python/googleMapsAPI.py) :__ Clase para trabajar con la API de Google Maps
 
+__[importarDesdeRutaRelativa](/scripts/python/importFromRelativePath.py) :__ Cómo importar ficheros desde una ruta relativa a otra
+
 __[lamppController](/scripts/python/lamppController.py) :__ Script para controlar el servidor XAMPP en Ubuntu
 
 __[LectorXLSX](/scripts/python/LectorXLSX.py) :__ Lector de ficheros XLSX con Python3
