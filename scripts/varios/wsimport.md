@@ -8,6 +8,6 @@ __RUTA_SRC__ = C
 <br>__PACKAGE__ = com.inazense.globalweather
 
 1. Inicio -> ejecutar -> cmd
-2. Cambiar al directorio de wsimport si no está registrado como variable de entorno (cd C:\Program Files\Java\jdkX.X.X\bin)
+2. Cambiar al directorio de wsimport si no está registrado como variable de entorno <br><code>cd C:\Program Files\Java\jdkX.X.X\bin</code>
 3. Para importar usaremos el siguiente comando (recuerda reemplazar los valores en mayúsculas por los tuyos propios:
     <p><code>wsimport.exe -d "RUTA_SRC" -s "RUTA_SRC" -p "PACKAGE" -keep WSDL_URL</code></p>
