@@ -4,7 +4,6 @@ Para nuestro supuesto, vamos a decir que el WSDL va a ser importado en un paquet
 Para ello tenemos que tener claros tres nombres, directorio donde descargar el WSDL, nombre del paquete y URL del WSDL a descargar. Ejemplo
 
 __RUTA_SRC__ = C
-
 __WSDL_URL__ = http://www.webservicex.com/globalweather.asmx?wsdl
 
 __PACKAGE__ = com.inazense.globalweather
