@@ -2,4 +2,4 @@
 
 ## Chrome
 
-<pre><code>Command + `</code></pre> Cambia entre varias ventanas del navegador
+- <pre><code>Command + `</code></pre> Cambia entre varias ventanas del navegador
