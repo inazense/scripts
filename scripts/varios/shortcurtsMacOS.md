@@ -1,5 +1,5 @@
 # Atajos de teclado en Mac OS
 
-### Chrome
+## Chrome
 
-- __Command + `__ Cambia entre varias ventanas del navegador
+<pre><code>Command + `</code></pre> Cambia entre varias ventanas del navegador
