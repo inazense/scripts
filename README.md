@@ -91,6 +91,8 @@ __[Anclar Papelera al dock de Ubuntu](/scripts/varios/PapeleraDockUbuntu.sh):__ 
 
 __[Atajos de teclado para IntelliJ](/scripts/varios/intellij-shortcuts.md)__
 
+__[Atajos de teclado para Mac OS](/scripts/varios/shortcurtsMacOS.md)__
+
 __[Atajos de teclado para Notepad++](/scripts/varios/atajosNotepad++.md)__
 
 __[Cheatsheet comandos GIT](/scripts/varios/cheatsheetGit.md)__
