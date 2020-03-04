@@ -22,6 +22,7 @@
 |Sourcetree|
 |Tor browser|
 |Pasta|
+|AppCleaner|
 
 ## Configuración de software
 
