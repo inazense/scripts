@@ -1,4 +1,4 @@
-### Para borrar todas las versiones de Java:
+### Para borrar todas las versiones de Java:
 
 ```
 sudo rm -rf /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin  
@@ -7,7 +7,7 @@ sudo rm -rf /Library/Application\ Support/Oracle/Java/
 sudo rm -rf /Library/Java/JavaVirtualMachines 
 ```
 
-### Para borrar una versión en concreto
+### Para borrar una versión en concreto
 
 - Comprobar que versiones hay disponibles
 ```
