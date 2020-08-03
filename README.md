@@ -86,6 +86,8 @@ __[LectorXLSX](/scripts/python/LectorXLSX.py):__ Lector de ficheros XLSX con Pyt
 
 __[ManejadorXamppUbuntu](/scripts/python/manejadorXamppUbuntu.py)__ Arranca / detiene los servicios de XAMPP en Ubuntu
 
+__[Python3 como entorno predeterminado en Mac OS Catalina](/scripts/python/Python3%20as%20default.md)__
+
 ### Varios
 __[Anclar Papelera al dock de Ubuntu](/scripts/varios/PapeleraDockUbuntu.sh):__ Fichero .sh para permitir anclar la papelera al dock de Ubuntu
 
