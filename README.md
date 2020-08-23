@@ -107,6 +107,8 @@ __[EliminarOneDrive](/scripts/varios/eliminarOneDrive.cmd):__ Fichero .cmd para 
 
 __[Links de interés](/scripts/varios/LinksInteresantes.md)__
 
+__[Respuestas automatizadas](/scripts/varios/RespuestasAutomatizadas.md)__
+
 __[RestaurarVisorFotos](/scripts/varios/restaurarVisorFotos.reg):__ Habilita el uso del visor de fotos de Windows 7 en Windows 10. Requiere reinicio del sistema operativo
 
 __[WSDLImport](/scripts/varios/wsimport.md):__ Instrucciones sobre como realizar un import de un WSDL a un proyecto Java
