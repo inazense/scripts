@@ -12,9 +12,12 @@
  3. `pyenv version` *(Comprueba que la versión es la que tu has indicado)*
  4. `echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
  5. Comprueba que en el fichero .zshrc se ha agregado la siguiente línea:
+ 
  `
  if command -v pyenv 1>/dev/null 2>&1; then
+  
   eval "$(pyenv init -)"
+
 fi
  `
  6. Reinicia el terminal para que los cambios se apliquen y comprueba con los siguientes comandos
