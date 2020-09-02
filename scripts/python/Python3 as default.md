@@ -11,16 +11,7 @@
  2. `pyenv global 3.x.x` *(Reemplaza las x por la versión de python que desees)*
  3. `pyenv version` *(Comprueba que la versión es la que tu has indicado)*
  4. `echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
- 5. Comprueba que en el fichero .zshrc se ha agregado la siguiente línea:
- 
- `
- if command -v pyenv 1>/dev/null 2>&1; then
-  
-  eval "$(pyenv init -)"
-
-fi
- `
- 6. Reinicia el terminal para que los cambios se apliquen y comprueba con los siguientes comandos
- 7. `which python`
- 8. `python -V`
- 9. `pip -V`
+ 5. Reinicia el terminal para que los cambios se apliquen y comprueba con los siguientes comandos
+ 6. `which python`
+ 7. `python -V`
+ 8. `pip -V`
