@@ -33,12 +33,16 @@
 - Auto Close Tag
 - Auto Rename Tag
 - Better Comments
-- Bracket Pair Colorized
-- Git history
+- Bookmarks
+- Bracket Pair Colorized 2
+- Color Highlight
 - IntelliSense for CSS class names in HTML
+- Live server
+- Material Icon Theme
+- Paste JSON as code
 - Path Intellisense
 - Python
-- VS Color Picker
+- TODO Tree
 - vscode icons
 
 #### Preferences JSON
