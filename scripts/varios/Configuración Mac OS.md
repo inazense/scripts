@@ -19,11 +19,12 @@
 |Git|
 |Maven|
 |Python|
-|Sourcetree|
+|Fork|
 |The Unarchiver|
 |Tor browser|
 |Pasta|
 |AppCleaner|
+|SoundSource|
 
 ## Configuración de software
 
