@@ -20,6 +20,7 @@
 |Maven|
 |Python|
 |Sourcetree|
+|The Unarchiver|
 |Tor browser|
 |Pasta|
 |AppCleaner|
