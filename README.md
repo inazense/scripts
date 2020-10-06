@@ -103,6 +103,12 @@ __[Cheatsheet comandos GIT](/scripts/varios/cheatsheetGit.md)__
 
 __[Configuración Mac OS](/scripts/varios/Configuración%20Mac%20OS.md)__
 
+__[Configuración IntelliJ](/scripts/varios/ConfigIntelliJ.md)__
+
+__[Configuración Sublime Text 3](/scripts/varios/ConfigSublimeText.md)__
+
+__[Configuración Visual Studio Code](/scripts/varios/ConfigVSCode.md)__
+
 __[EliminarOneDrive](/scripts/varios/eliminarOneDrive.cmd):__ Fichero .cmd para forzar la desinstalación de OneDrive de Windows 10
 
 __[Links de interés](/scripts/varios/LinksInteresantes.md)__
