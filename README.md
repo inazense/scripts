@@ -100,7 +100,7 @@ __[Atajos de teclado para Mac OS](/scripts/varios/shortcurtsMacOS.md)__
 
 __[Atajos de teclado para Notepad++](/scripts/varios/atajosNotepad++.md)__
 
-### SSOO
+### SS.OO.
 __[Borrar Java de Mac OS](/scripts/varios/removeJavaFromMacOS.md)__
 
 __[Configuración Mac OS](/scripts/varios/Configuración%20Mac%20OS.md)__
