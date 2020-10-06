@@ -25,6 +25,8 @@
 |Visual Studio Code|
 
 ## Configuración de software
-|[Visual Studio Code configuration](ConfigVSCode.md)|
-|[Sublime Text configuration](ConfigSublimeText.md)|
-|[IntelliJ configuration](ConfigIntelliJ.md)|
+[Visual Studio Code configuration](ConfigVSCode.md)
+
+[Sublime Text configuration](ConfigSublimeText.md)
+
+[IntelliJ configuration](ConfigIntelliJ.md)
