@@ -109,6 +109,8 @@ __[EliminarOneDrive](/scripts/varios/eliminarOneDrive.cmd):__ Fichero .cmd para 
 
 __[RestaurarVisorFotos](/scripts/varios/restaurarVisorFotos.reg):__ Habilita el uso del visor de fotos de Windows 7 en Windows 10. Requiere reinicio del sistema operativo
 
+__[Ver serial Windows 10](/scripts/varios/verSerial.md)__
+
 ### Software
 __[Configuración IntelliJ](/scripts/varios/ConfigIntelliJ.md)__
 
