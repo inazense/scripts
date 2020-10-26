@@ -1,0 +1,331 @@
+{
+	/*
+	MOVILIZER 2.6 SNIPPETS
+	*/
+
+	// MEL methods
+	"Write warning message in the cloud": {
+		"scope": "xml",
+		"prefix": "warning",
+		"body": "warning(\"$1\");",
+		"description": "Write a warning message in the movilizer monitoring"
+	},
+	"$global": {
+		"scope": "xml",
+		"prefix": "$:global",
+		"body": "$global:$1",
+		"description": "$global variable"
+	},
+	"$local": {
+		"scope": "xml",
+		"prefix": "$:local",
+		"body": "$local:$1",
+		"description": "$local variable"
+	},
+	"$answer": {
+		"scope": "xml",
+		"prefix": "$:answer",
+		"body": "$answer:'$1'",
+		"description": "$answer object"
+	},
+	"abs": {
+		"scope": "xml",
+		"prefix": "abs",
+		"body": "abs($1number);",
+		"description": "num abs(numeric) Returns the absolute (positive) value of the given numeric value"
+	},
+	"addAnswer": {
+		"scope": "xml",
+		"prefix": "addAnswer",
+		"body": "addAnswer($1answer, $2clientKey, $3text);",
+		"description": "addAnswer(answ-desc answer, str clientKey, str answerText) Adds an answer"
+	},
+	"addAnswerItem": {
+		"scope": "xml",
+		"prefix": "addAnswerItem",
+		"body": "addAnswerItem($1answer, $2clientKey, $3dummyItemClientKey, $4newItemClientKey, $5itemValue);",
+		"description": "addAnswerItem(answ-desc answer, str clientKey, str dummyItemClientKey, str newItemClientKey, str itemValue) Add answer item"
+	},
+	"addAnswers": {
+		"scope": "xml",
+		"prefix": "addAnswers",
+		"body": "addAnswers($1answer, $2arrAnswersText);",
+		"description": "addAnswers(answ-desc answer, arr answerTexts) Add answers from array"
+	},
+	"addArrays": {
+		"scope": "xml",
+		"prefix": "addArrays",
+		"body": "addArrays($1inputArray1, $2inputArray2);",
+		"description": "addArrays(arr inputArray1, arr inputArray2) Used for adding array values with the same key"
+	},
+	"anchor": {
+		"scope": "xml",
+		"prefix": "anchor",
+		"body": "anchor($1answer, $2clientKey);",
+		"description": "anchor(answ-desc answer, str clientKey) Set anchor"
+	},
+	"appendString": {
+		"scope": "xml",
+		"prefix": "appendString",
+		"body": "appendString($1str1, $2str2);",
+		"description": "str appendString(str inputString1, str inputStr2)"
+	},
+	"available": {
+		"scope": "xml",
+		"prefix": "available",
+		"body": "available($1:connID);",
+		"description": "num available(connID) The function checks the available bytes for a given connection ID and returns the ammount of bytes"
+	},
+	"avg": {
+		"scope": "xml",
+		"prefix": "avg",
+		"body": "avg($1:array);",
+		"description": "num avg(arr array) Returns the average value of all numeric values in a given array"
+	},
+	"backupMDDB": {
+		"scope": "xml",
+		"prefix": "backupMDDB",
+		"body": "backupMDDB($1:location);",
+		"description": "backupMDDB(str location) Backup masterdata db to a location"
+	},
+	"backupTSDB": {
+		"scope": "xml",
+		"prefix": "backupTSDB",
+		"body": "backupTSDB($1:location);",
+		"description": "backupTSDB(str location) Backup transactional db to a location"
+	},
+	"base64Decode": {
+		"scope": "xml",
+		"prefix": "base64Decode",
+		"body": "base64Decode($1:data);",
+		"description": "bin base64Decode(bin data) Converts base64 binary data to text or images"
+	},
+	"base64Encode": {
+		"scope": "xml",
+		"prefix": "base64Encode",
+		"body": "base64Encode($1:data);",
+		"description": "bin base64Encode(bin data) Converts binary data to base64"
+	},
+	"call": {
+		"scope": "xml",
+		"prefix": "call",
+		"body": "call($1:function)($2parameter);",
+		"description": "call(melfunction)(param1, param2, ...) Execute a user defined function"
+	},
+	"castByteToData": {
+		"scope": "xml",
+		"prefix": "castByteToData",
+		"body": "castByteToData($1num);",
+		"description": "bin castByteToData(num numeric) Converts numeric value to 8-bit data block"
+	},
+	"castDataToByte": {
+		"scope": "xml",
+		"prefix": "castDataToByte",
+		"body": "castDataToByte($1data, $2isSigned);",
+		"description": "num castDataToByte(bin data, bln isSigned) Converts a given 8-bit data into a byte-type numeric value"
+	},
+	"castDataToInt": {
+		"scope": "xml",
+		"prefix": "castDataToInt",
+		"body": "castDataToInt($1data, $2isSigned);",
+		"description": "num castDataToInt(bin data, bln isSigned) Converts a given 8-bit data into an integer numeric value"
+	},
+	"castDataToLong": {
+		"scope": "xml",
+		"prefix": "castDataToLong",
+		"body": "castDataToLong($1:data, $2isSigned);",
+		"description": "num castDataToLong(bin data, bln isSigned) Converts a given 8-bit data into a long numeric value"
+	},
+	"castDataToShort": {
+		"scope": "xml",
+		"prefix": "castDataToShort",
+		"body": "castDataToShort($1:data, $2isSigned);",
+		"description": "num castDataToShort(bin data, bln isSigned) Converts a given 8-bit data into a short numeric value"
+	},
+	"castDataToString": {
+		"scope": "xml",
+		"prefix": "castDataToString",
+		"body": "castDataToString($1:data, $2encoding);",
+		"description": "str castDataToString(bin data, str encoding) Converts a given 8-bit data into a string"
+	},
+	"castIntToData": {
+		"scope": "xml",
+		"prefix": "castIntToData",
+		"body": "castIntToData($1num);",
+		"description": "bin castIntToData(num numeric) Converts integer value to 8-bit data block"
+	},
+	"castLongToData": {
+		"scope": "xml",
+		"prefix": "castLongToData",
+		"body": "castLongToData($1num);",
+		"description": "bin castLongToData(num numeric) Converts long value to 8-bit data block"
+	},
+	"castShortToData": {
+		"scope": "xml",
+		"prefix": "castShortToData",
+		"body": "castShortToData($1num);",
+		"description": "bin castShortToData(num numeric) Converts short value to 8-bit data block"
+	},
+	"castStringToData": {
+		"scope": "xml",
+		"prefix": "castStringToData",
+		"body": "castStringToData($1string, $2encoding);",
+		"description": "bin castStringToData(str inputString, str encoding) Converts string to 8-bit data block"
+	},
+	"clearAllHighlights": {
+		"scope": "xml",
+		"prefix": "clearAllHighlights",
+		"body": "clearAllHighlights();",
+		"description": "clearAllHighlights() Removes the highlighting of all answers"
+	},
+	"clearAnswerItemsByClientKey": {
+		"scope": "xml",
+		"prefix": "clearAnswerItemsByClientKey",
+		"body": "clearAnswerItemsByClientKey($1answer, $2clientKey);",
+		"description": "clearAnswerItemsByClientKey(answ-desc answer, str clientKey) Removes all answer items from a given pick list type answer"
+	},
+	"clearAnswerValues": {
+		"scope": "xml",
+		"prefix": "clearAnswerValues",
+		"body": "clearAnswerValues();",
+		"description": "clearAnswerValues() Clear all answer values on the current screen"
+	},
+	"clearGlobals": {
+		"scope": "xml",
+		"prefix": "clearGlobals",
+		"body": "clearGlobals();",
+		"description": "clearGlobals() Remove the values of all global variables"
+	},
+	"clearGlobalsCache": {
+		"scope": "xml",
+		"prefix": "clearGlobalsCache",
+		"body": "clearGlobalsCache($1clearAll);",
+		"description": "clearGlobalsCache(bol clearAll) Removes global variables from the cache memory of Movilizer client"
+	},
+	"clearHighlight": {
+		"scope": "xml",
+		"prefix": "clearHighlight",
+		"body": "clearHighlight($1answer, $2clientKey);",
+		"description": "clearHighlight(answ-desc answer, str clientKey) Removes the highlighting of a given Answer"
+	},
+	"clearLocals": {
+		"scope": "xml",
+		"prefix": "clearLocals",
+		"body": "clearLocals();",
+		"description": "clearLocals() Remove values of all the local variables"
+	},
+	"clearLocalsCache": {
+		"scope": "xml",
+		"prefix": "cleclearLocalsCachearLocals",
+		"body": "clearLocalsCache($1clearAll);",
+		"description": "clearLocalsCache(bol clearAll) Removes the local variables from the cache memory of the Movilizer Client"
+	},
+	"clearTemps": {
+		"scope": "xml",
+		"prefix": "clearTemps",
+		"body": "clearTemps();",
+		"description": "clearTemps() Removes the values of all temporary variables"
+	},
+	"close": {
+		"scope": "xml",
+		"prefix": "close",
+		"body": "close($1connectionID);",
+		"description": "close(str connectionID) Close an active or open connection to other programs, modules and systems"
+	},
+	"concat": {
+		"scope": "xml",
+		"prefix": "concat",
+		"body": "concat($1str1, $2str2);",
+		"description": "str concat(str str1, str str2, ...) Combines two or more strings into one string"
+	},
+	"concatArrays": {
+		"scope": "xml",
+		"prefix": "concatArrays",
+		"body": "concatArrays($1arr1, $2arr2);",
+		"description": "arr concatArrays(arr arr1, arr arr2, ...) Combines the elements of two given arrays"
+	},
+	"condition": {
+		"scope": "xml",
+		"prefix": "condition",
+		"body": "condition($1condition, $2objTrue, $3objFalse);",
+		"description": "any condition(bln condition, any valueTrue, any valueFalse) returns a specified value if a given input value is true or another specified value if the given input value is false"
+	},
+	"connect": {
+		"scope": "xml",
+		"prefix": "connect",
+		"body": "connect($1uri, $2method);",
+		"description": "num connect(str URI, str requestMethod) Connects to a given URI and opens a connection to other programs"
+	},
+	"consumeExternalEvent": {
+		"scope": "xml",
+		"prefix": "consumeExternalEvent",
+		"body": "consumeExternalEvent($1evt);",
+		"description": "consumeExternalEvent(str evtSrc) Consumes an OnExternal event"
+	},
+	"count": {
+		"scope": "xml",
+		"prefix": "count",
+		"body": "count($1array);",
+		"description": "num count(arr inputArray) returns the number of elements in a given array"
+	},
+	"countMasterData": {
+		"scope": "xml",
+		"prefix": "countMasterData",
+		"body": "countMasterData($1pool, $2group, $3description, $4filter1, $5filter2, $6filter3);",
+		"description": "num countMasterData(md-desc pool, str group, str description, str filter1, str filter2, str filter3) Returns the number of master data records that match the specified filter queries in a given master data pool"
+	},
+	"countPendingContainers": {
+		"scope": "xml",
+		"prefix": "countPendingContainers",
+		"body": "countPendingContainers();",
+		"description": "num countPendingContainers() Returns the number of data containers that are in pending state on the device"
+	},
+	"countPendingReplies": {
+		"scope": "xml",
+		"prefix": "countPendingReplies",
+		"body": "countPendingReplies();",
+		"description": "num countPendingReplies() returns the number of replies that are in pending state on the device"
+	},
+	"dataConcat": {
+		"scope": "xml",
+		"prefix": "dataConcat",
+		"body": "dataConcat($1data1, $2data2);",
+		"description": "bin dataConcat(bin inputData1, bin inputData2, ...) merges two or more blocks of binary data into a single variable"
+	},
+	"dataFindByte": {
+		"scope": "xml",
+		"prefix": "dataFindByte",
+		"body": "dataFindByte($1data, $2start, $3byte);",
+		"description": "num dataFindByte(bin data, num startIndex, num byteValue) searches for a specified byte value in the given block of binary data and returns the index of the byte value"
+	},
+	"dataLength": {
+		"scope": "xml",
+		"prefix": "dataLength",
+		"body": "dataLength($1data);",
+		"description": "num dataLength(bin data) returns the length of the given block of binary data in bytes"
+	},
+	"dataRange": {
+		"scope": "xml",
+		"prefix": "dataRange",
+		"body": "dataRange($1data, $2start, $3byte);",
+		"description": "num dataRange(bin data, num startIndex, num byteRange) returns a specified range of bytes within the given block of binary data"
+	},
+	"dateToTimestamp": {
+		"scope": "xml",
+		"prefix": "dateToTimestamp",
+		"body": "dateToTimestamp($1date, $2applyOffset);",
+		"description": "num dateToTimestamp(str date, bln applyOffset) transforms a given date and time formatted string into a numeric timestamp"
+	},
+	"default": {
+		"scope": "xml",
+		"prefix": "default",
+		"body": "default($1input, $2value);",
+		"description": "any default(any inputVariable, any defaultValue) returns either the value of a given variable or, if the variable is not defined, a specified default value"
+	},
+	"deployWebapp": {
+		"scope": "xml",
+		"prefix": "deployWebapp",
+		"body": "deployWebapp($1path, $2target);",
+		"description": "any deployWebapp(str sourcePath, str targetDirectory) unzips and deploys a zipped web application to a specified target folder at the default location for the web applications in the protected storage area of the Movilizer Client"
+	},
+}
