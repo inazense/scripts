@@ -69,6 +69,8 @@ __[ScanItems](/scripts/movilizer/ScanItems.mxml)__ Pantalla de escaneo de elemen
 
 __[TimeUtils](/scripts/movilizer/TimeUtils.mxml):__ Librería MEL para trabajar con tiempos
 
+__[VSCode user snippets](/scripts/movilizer/movilizer.code-snippets)__ Code snippets personalizados para VS Code de Movilizer v16
+
 ### PHP
 __[Ficheros](/scripts/php/Ficheros.php):__ Clase para trabajar con ficheros. Actualmente solo lee ficheros de un directorio
 
