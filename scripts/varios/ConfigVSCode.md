@@ -8,6 +8,7 @@
 - Bookmarks
 - Bracket Pair Colorized 2
 - Color Highlight
+- Docker
 - GitLens
 - Java Extension Pack
 - Live server
@@ -16,7 +17,10 @@
 - Path Intellisense
 - Prettier - Code formatter
 - Python
+- Spring Boot Extension Pack
+- Spring Boot Tools
 - TODO Tree
+- Tomcat for Java
 - Visual Studio IntelliCode
 
 #### Preferences JSON
