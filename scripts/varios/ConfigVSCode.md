@@ -8,22 +8,31 @@
 - Bookmarks
 - Bracket Pair Colorized 2
 - Color Highlight
-- IntelliSense for CSS class names in HTML
+- GitLens
+- Java Extension Pack
 - Live server
 - Material Icon Theme
 - Paste JSON as code
 - Path Intellisense
+- Prettier - Code formatter
 - Python
 - TODO Tree
-- vscode icons
+- Visual Studio IntelliCode
 
 #### Preferences JSON
 ```
 {
-	"workbench.startupEditor": "newUntitledFile",
-	"workbench.iconTheme": "vscode-icons",
-	"better-comments.multilineComments": true,
-	"better-comments.highlightPlainText": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "todo-tree.tree.showScanModeButton": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "better-comments.multilineComments": true,
+    "better-comments.highlightPlainText": false,
+    "editor.wordWrap": "on",
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.formatOnSave": false,
+	"emmet.triggerExpansionOnTab": true,
+	"files.encoding": "utf8",
 	"better-comments.tags": [
 		{
 			"tag": "!",
@@ -56,12 +65,8 @@
 			"backgroundColor": "transparent"
 		}
 	],
-	"files.encoding": "utf8",
-	"python.pythonPath": "/usr/local/bin/python3",
-	"editor.wordWrap": "on",
-	"editor.tabSize": 4,
-	"editor.insertSpaces": false,
-	"editor.formatOnSave": false,
-	"emmet.triggerExpansionOnTab": true
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"python.pythonPath": "/usr/local/bin/python3"
 }
 ```
