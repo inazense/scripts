@@ -56,7 +56,7 @@
 
 
 ## Navegador
-- __[Record screen](https://recordscreen.io/)__ Graba la pantalla de tu ordenador con la webcam sobrepuesta (o no<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>)
+- __[Record screen](https://recordscreen.io/)__ Graba la pantalla de tu ordenador con la webcam sobrepuesta
 ## PDF
 - __[I love PDF](https://www.ilovepdf.com/)__ Para realizar cualquier operación con PDFs
 
