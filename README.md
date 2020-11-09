@@ -125,6 +125,6 @@ __[Anclar Papelera al dock de Ubuntu](/scripts/varios/PapeleraDockUbuntu.sh):__ 
 
 __[Cheatsheet comandos GIT](/scripts/varios/cheatsheetGit.md)__
 
-__[Links de interés](/scripts/varios/LinksInteresantes.md)__
+__[Links interesantes](/scripts/varios/LinksInteresantes.md)__
 
 __[Respuestas automatizadas](/scripts/varios/RespuestasAutomatizadas.md)__
