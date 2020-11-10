@@ -10,9 +10,13 @@
 - Color Highlight
 - Docker
 - GitLens
+- Indent-Rainbow
 - Java Extension Pack
+- JavaScript (ES6) code snippets
 - Live server
 - Material Icon Theme
+- npm (creador: egamma)	
+- npm Intellisense
 - Paste JSON as code
 - Path Intellisense
 - Prettier - Code formatter
