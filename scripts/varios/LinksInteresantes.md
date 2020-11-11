@@ -78,6 +78,8 @@
 
 - __[Gitignore.io](https://www.toptal.com/developers/gitignore)__ Generador de ficheros .gitignore para distintos lenguajes
 
+- __[Javascript Operator Lookup](https://joshwcomeau.com/operator-lookup/)__ Chuleta de operadores Javascript
+
 - __[JS Fiddle](https://jsfiddle.net/)__ Probar Javascript y frameworks online. Permite guardar los ejemplos y publicarlos
 
 - __[JSON Lint](https://jsonlint.com/)__ Validador de JSON
