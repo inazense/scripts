@@ -6,9 +6,9 @@
 |AppCleaner|
 |Calibre|
 |Chrome|
-|Eclipse|
 |Fork|
 |Git|
+|IntelliJ|
 |JDK|
 |League of legends|
 |Maven|
