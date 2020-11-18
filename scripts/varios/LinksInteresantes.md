@@ -32,6 +32,8 @@
 ## Imagen
 - __[AudioMass](https://audiomass.co/)__ Editor de audio online
 
+- __[Base64 Image](https://www.base64-image.de/)__ Convierte imagen a base64
+
 - __[Compressor.io](https://compressor.io/)__ Reduce el peso de imágenes
 
 - __[Flaticon](https://www.flaticon.com/)__ Iconos gratis
