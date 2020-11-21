@@ -1,11 +1,13 @@
 # Sublime Text 3 configuration
 
 #### Extensiones
+- A File Icon
 - AdvanceNewFile
 - AutoFileName
+- BracketHighlighter
 - Compare Side-by-side
 - Emmet
 - IndentXML
-- Local History
 - MarkdownPreview
 - SidebarEnhancements
+- Terminal
