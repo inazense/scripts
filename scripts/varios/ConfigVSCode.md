@@ -9,6 +9,7 @@
 - Bracket Pair Colorized 2
 - Color Highlight
 - GitLens
+- indent-rainbow
 - JavaScript (ES6) code snippets
 - Live server
 - Material Icon Theme
