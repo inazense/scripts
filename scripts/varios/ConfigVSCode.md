@@ -8,23 +8,16 @@
 - Bookmarks
 - Bracket Pair Colorized 2
 - Color Highlight
-- Docker
 - GitLens
-- Indent-Rainbow
-- Java Extension Pack
 - JavaScript (ES6) code snippets
 - Live server
 - Material Icon Theme
 - npm (creador: egamma)	
 - npm Intellisense
-- Paste JSON as code
 - Path Intellisense
 - Prettier - Code formatter
 - Python
-- Spring Boot Extension Pack
-- Spring Boot Tools
 - TODO Tree
-- Tomcat for Java
 - Visual Studio IntelliCode
 
 #### Preferences JSON
