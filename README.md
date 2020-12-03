@@ -25,6 +25,8 @@ __[ManejadorMovilizer](/scripts/java/ManejadorMovilizer.java):__ Clase usada par
 
 __[ManejadorProperties](/scripts/java/ManejadorProperties.java):__ Clase para leer una propiedad concreta de archivos properties usando el patrón Singleton
 
+__[Ordenar Map por valor](/scripts/java/SortMapByValue.md)__
+
 ### MAF
 __[Colas MAF](/scripts/maf/manejadorColasMAF.groovy):__ Cómo manejar colas MAF en nodos Cassandra
 
