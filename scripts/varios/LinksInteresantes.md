@@ -70,6 +70,8 @@
 
 
 ## Programación
+- __[404 pages](https://www.404pages.xyz/)__ Recopilación de páginas de error 404
+
 - __[Border radius](https://border-radius.com/)__ Generador de bordes redondeados en CSS
 
 - __[Can I use...?](https://caniuse.com/)__
