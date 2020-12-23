@@ -7,6 +7,7 @@
 - Better Comments
 - Bookmarks
 - Bracket Pair Colorized 2
+- C# (instalar primero [.net Core SDK](https://dotnet.microsoft.com/download))
 - Color Highlight
 - GitLens
 - indent-rainbow
