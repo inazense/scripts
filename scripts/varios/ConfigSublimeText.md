@@ -8,6 +8,5 @@
 - Compare Side-by-side
 - Emmet
 - IndentXML
-- MarkdownPreview
 - SidebarEnhancements
-- Terminal
+- Tabnine
