@@ -19,7 +19,6 @@
 - Path Intellisense
 - Prettier - Code formatter
 - Python
-- Tabnine
 - TODO Tree
 - Visual Studio IntelliCode
 

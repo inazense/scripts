@@ -27,6 +27,8 @@ __[ManejadorProperties](/scripts/java/ManejadorProperties.java):__ Clase para le
 
 __[Ordenar Map por valor](/scripts/java/SortMapByValue.md)__
 
+__[WSDLImport](/scripts/java/wsimport.md):__ Instrucciones sobre como realizar un import de un WSDL a un proyecto Java
+
 ### MAF
 __[Colas MAF](/scripts/maf/manejadorColasMAF.groovy):__ Cómo manejar colas MAF en nodos Cassandra
 
@@ -51,8 +53,6 @@ __[Masterdata. Query](/scripts/maf/queryMasterdata.groovy)__
 __[Masterdata. Creación](/scripts/maf/creacionMasterdata.groovy)__
 
 __[SSCC Generator](/scripts/maf/ssccGenerator.groovy):__ Clase para trabajar con la generación de códigos SSCC
-
-__[WSDLImport](/scripts/varios/wsimport.md):__ Instrucciones sobre como realizar un import de un WSDL a un proyecto Java
 
 ### Movilizer
 __[CheckAndUncheckElements](/scripts/movilizer/CheckAndUncheckElements.mxml):__ Pantalla de selección de checkboxes en tablas Movilizer
@@ -97,34 +97,28 @@ __[ManejadorXamppUbuntu](/scripts/python/manejadorXamppUbuntu.py)__ Arranca / de
 
 __[Python3 como entorno predeterminado en Mac OS Catalina](/scripts/python/Python3%20as%20default.md)__
 
-### Shortcuts
-__[Atajos de teclado para IntelliJ](/scripts/varios/intellij-shortcuts.md)__
-
-__[Atajos de teclado para Mac OS](/scripts/varios/shortcurtsMacOS.md)__
-
-__[Atajos de teclado para Notepad++](/scripts/varios/atajosNotepad++.md)__
 
 ### SS.OO.
-__[Borrar Java de Mac OS](/scripts/varios/removeJavaFromMacOS.md)__
+__[Anclar Papelera al dock de Ubuntu](/scripts/sistemasOperativos/PapeleraDockUbuntu.sh):__ Fichero .sh para permitir anclar la papelera al dock de Ubuntu
 
-__[Configuración Mac OS](/scripts/varios/Configuración%20Mac%20OS.md)__
+__[Borrar Java de Mac OS](/scripts/sistemasOperativos/removeJavaFromMacOS.md)__
 
-__[EliminarOneDrive](/scripts/varios/eliminarOneDrive.cmd):__ Fichero .cmd para forzar la desinstalación de OneDrive de Windows 10
+__[EliminarOneDrive](/scripts/sistemasOperativos/eliminarOneDrive.cmd):__ Fichero .cmd para forzar la desinstalación de OneDrive de Windows 10
 
-__[RestaurarVisorFotos](/scripts/varios/restaurarVisorFotos.reg):__ Habilita el uso del visor de fotos de Windows 7 en Windows 10. Requiere reinicio del sistema operativo
+__[RestaurarVisorFotos](/scripts/sistemasOperativos/restaurarVisorFotos.reg):__ Habilita el uso del visor de fotos de Windows 7 en Windows 10. Requiere reinicio del sistema operativo
 
-__[Ver serial Windows 10](/scripts/varios/verSerial.md)__
+__[Ver serial Windows 10](/scripts/sistemasOperativos/verSerial.md)__
 
 ### Software
-__[Configuración IntelliJ](/scripts/varios/ConfigIntelliJ.md)__
+__[Atajos de teclado para Notepad++](/scripts/software/atajosNotepad++.md)__
 
-__[Configuración Sublime Text 3](/scripts/varios/ConfigSublimeText.md)__
+__[Configuración IntelliJ](/scripts/software/ConfigIntelliJ.md)__
 
-__[Configuración Visual Studio Code](/scripts/varios/ConfigVSCode.md)__
+__[Configuración Sublime Text 3](/scripts/software/ConfigSublimeText.md)__
+
+__[Configuración Visual Studio Code](/scripts/software/ConfigVSCode.md)__
 
 ### Varios
-__[Anclar Papelera al dock de Ubuntu](/scripts/varios/PapeleraDockUbuntu.sh):__ Fichero .sh para permitir anclar la papelera al dock de Ubuntu
-
 __[Cheatsheet comandos GIT](/scripts/varios/cheatsheetGit.md)__
 
 __[Links interesantes](/scripts/varios/LinksInteresantes.md)__
