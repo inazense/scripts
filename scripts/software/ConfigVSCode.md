@@ -25,6 +25,9 @@
 #### Preferences JSON
 ```
 {
+    "auto-rename-tag.activationOnLanguage": [
+        "*"
+    ]
     "better-comments.multilineComments": true,
     "better-comments.highlightPlainText": false,
     "better-comments.tags": [
