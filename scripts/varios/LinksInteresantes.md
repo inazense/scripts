@@ -21,6 +21,8 @@
 
 - __[Trello](https://trello.com/)__ Gestor de proyectos por tableros
 
+- __[Whimsical](https://whimsical.com/)__ Diagramas de flujo online
+
 
 ## IDE
 - __[Codeshare](https://codeshare.io/)__ IDE online grupal con videoconferencia incluida
