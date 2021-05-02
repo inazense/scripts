@@ -25,7 +25,7 @@ __[ManejadorMovilizer](/scripts/java/ManejadorMovilizer.java):__ Clase usada par
 
 __[ManejadorProperties](/scripts/java/ManejadorProperties.java):__ Clase para leer una propiedad concreta de archivos properties usando el patrón Singleton
 
-__[Ordenar Map por valor](/scripts/java/SortMapByValue.md)__
+__[Ordenar Map por valor](/scripts/java/SortMapByValue.java)__
 
 __[WSDLImport](/scripts/java/wsimport.md):__ Instrucciones sobre como realizar un import de un WSDL a un proyecto Java
 
