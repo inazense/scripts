@@ -45,6 +45,8 @@
 
 - __[Icons 8](https://icons8.com/)__ Descarga de iconos online
 
+- __[Iconduck](https://iconduck.com/)__ Descarga de iconos online
+
 - __[Logo Makr](https://logomakr.com/)__ Creador de iconos
 
 - __[Pixlr](https://pixlr.com/es/)__ Photoshop online
