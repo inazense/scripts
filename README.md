@@ -124,3 +124,5 @@ __[Cheatsheet comandos GIT](/scripts/varios/cheatsheetGit.md)__
 __[Links interesantes](/scripts/varios/LinksInteresantes.md)__
 
 __[Respuestas automatizadas](/scripts/varios/RespuestasAutomatizadas.md)__
+
+__[Markdown Jekyll shortcuts en VS Code](/scripts/varios/jekyll-shortcuts-vscode.json)__
