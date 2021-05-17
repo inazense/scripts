@@ -99,6 +99,8 @@ __[Python3 como entorno predeterminado en Mac OS Catalina](/scripts/python/Pytho
 
 
 ### SS.OO.
+__[Activar Windows 10](/scripts/sistemasOperativos/activar-windows.md)__
+
 __[Anclar Papelera al dock de Ubuntu](/scripts/sistemasOperativos/PapeleraDockUbuntu.sh):__ Fichero .sh para permitir anclar la papelera al dock de Ubuntu
 
 __[Borrar Java de Mac OS](/scripts/sistemasOperativos/removeJavaFromMacOS.md)__
