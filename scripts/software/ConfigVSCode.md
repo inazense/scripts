@@ -19,6 +19,9 @@
 - Path Intellisense
 - Prettier - Code formatter
 - Python
+- Spring Boot Dashboard
+- Spring Boot Tools
+- Spring Initializr Java Support
 - TODO Tree
 - Visual Studio IntelliCode
 
