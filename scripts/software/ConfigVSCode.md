@@ -2,15 +2,18 @@
 
 #### Extensiones
 
+- advanced-new-file
 - Auto Close Tag
 - Auto Rename Tag
 - Better Comments
 - Bookmarks
 - Bracket Pair Colorized 2
 - C# (instalar primero [.net Core SDK](https://dotnet.microsoft.com/download))
+- Cobalt2 Theme Official
 - Color Highlight
 - GitLens
 - indent-rainbow
+- IntelliSense for CSS class names in HTML
 - JavaScript (ES6) code snippets
 - Live server
 - Material Icon Theme
@@ -24,6 +27,10 @@
 - Spring Initializr Java Support
 - TODO Tree
 - Visual Studio IntelliCode
+
+#### Instalaciones externas
+
+- Cascadia code font: https://github.com/microsoft/cascadia-code
 
 #### Preferences JSON
 ```
@@ -70,12 +77,30 @@
 	"editor.tabSize": 4,
 	"editor.insertSpaces": false,
     "editor.formatOnSave": false,
+    "editor.fontFamily": "'cascadia code'",
+    "editor.fontLigatures": true
     "emmet.triggerExpansionOnTab": true,
     "files.encoding": "utf8",
     "python.defaultInterpreterPath": "/usr/bin/python3",
     "todo-tree.tree.showScanModeButton": false,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Cobalt2",
 }
+```
+
+#### Keybinding JSON (Windows)
+```
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+alt+n",
+        "command": "workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "extension.advancedNewFile"
+    }
+]
 ```
