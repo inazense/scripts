@@ -78,11 +78,10 @@
 	"editor.insertSpaces": false,
     "editor.formatOnSave": false,
     "editor.fontFamily": "'cascadia code'",
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
     "emmet.triggerExpansionOnTab": true,
     "files.encoding": "utf8",
     "python.defaultInterpreterPath": "/usr/bin/python3",
-    "todo-tree.tree.showScanModeButton": false,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
@@ -100,6 +99,21 @@
     },
     {
         "key": "ctrl+n",
+        "command": "extension.advancedNewFile"
+    }
+]
+```
+
+#### Keybinding JSON (Mac OS)
+```
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+alt+n",
+        "command": "workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "cmd+n",
         "command": "extension.advancedNewFile"
     }
 ]
