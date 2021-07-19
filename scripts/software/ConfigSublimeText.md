@@ -1,4 +1,4 @@
-# Sublime Text 3 configuration
+# Sublime Text configuration
 
 #### Extensiones
 - A File Icon
