@@ -115,6 +115,38 @@
     {
         "key": "cmd+n",
         "command": "extension.advancedNewFile"
+    },
+    {
+        "key": "cmd+[BracketRight]",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "shift+cmd+0",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "shift+cmd+-",
+        "command": "-workbench.action.zoomOut"
+    },
+    {
+        "key": "cmd+numpad_subtract",
+        "command": "-workbench.action.zoomOut"
+    },
+    {
+        "key": "cmd+-",
+        "command": "-workbench.action.zoomOut"
+    },
+    {
+        "key": "cmd+numpad_add",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "cmd+[BracketRight]",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "cmd+-",
+        "command": "editor.action.fontZoomOut"
     }
 ]
 ```
