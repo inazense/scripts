@@ -81,7 +81,7 @@
     "editor.fontLigatures": true,
     "emmet.triggerExpansionOnTab": true,
     "files.encoding": "utf8",
-    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "python.defaultInterpreterPath": "C:\\Python39\\python.exe",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
@@ -89,7 +89,7 @@
 }
 ```
 
-#### Keybinding JSON (Windows)
+#### Keybinding JSON
 ```
 // Place your key bindings in this file to override the defaultsauto[]
 [
@@ -101,52 +101,43 @@
         "key": "ctrl+n",
         "command": "extension.advancedNewFile"
     }
-]
-```
-
-#### Keybinding JSON (Mac OS)
-```
-// Place your key bindings in this file to override the defaultsauto[]
-[
     {
-        "key": "cmd+alt+n",
-        "command": "workbench.action.files.newUntitledFile"
-    },
-    {
-        "key": "cmd+n",
+        "key": "ctrl+n",
         "command": "extension.advancedNewFile"
     },
     {
-        "key": "cmd+[BracketRight]",
+        "key": "ctrl+[BracketRight]",
         "command": "-workbench.action.zoomIn"
     },
     {
-        "key": "shift+cmd+0",
+        "key": "shift+ctrl+0",
         "command": "-workbench.action.zoomIn"
     },
     {
-        "key": "shift+cmd+-",
+        "key": "shift+ctrl+-",
         "command": "-workbench.action.zoomOut"
     },
     {
-        "key": "cmd+numpad_subtract",
+        "key": "ctrl+numpad_subtract",
         "command": "-workbench.action.zoomOut"
     },
     {
-        "key": "cmd+-",
+        "key": "ctrl+-",
         "command": "-workbench.action.zoomOut"
     },
     {
-        "key": "cmd+numpad_add",
+        "key": "ctrl+numpad_add",
         "command": "-workbench.action.zoomIn"
     },
     {
-        "key": "cmd+[BracketRight]",
+        "key": "ctrl+[BracketRight]",
         "command": "editor.action.fontZoomIn"
     },
     {
-        "key": "cmd+-",
+        "key": "ctrl+-",
         "command": "editor.action.fontZoomOut"
     }
 ]
 ```
+
+
