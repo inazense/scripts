@@ -23,9 +23,7 @@
 - Path Intellisense
 - Prettier - Code formatter
 - Python extension pack
-- Spring Boot Dashboard
-- Spring Boot Tools
-- Spring Initializr Java Support
+- Spring Boot Extension Pack
 - TODO Tree
 - Visual Studio IntelliCode
 
