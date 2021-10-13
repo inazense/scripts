@@ -9,9 +9,9 @@
 - Bookmarks
 - Bracket Pair Colorized 2
 - C# (instalar primero [.net Core SDK](https://dotnet.microsoft.com/download))
-- Cobalt2 Theme Official
 - Color Highlight
 - GitLens
+- Extension pack for Java (solo si JDK 11 o superior)
 - indent-rainbow
 - IntelliSense for CSS class names in HTML
 - JavaScript (ES6) code snippets
@@ -19,9 +19,10 @@
 - Material Icon Theme
 - npm (creador: egamma)	
 - npm Intellisense
+- One Dark Pro
 - Path Intellisense
 - Prettier - Code formatter
-- Python
+- Python extension pack
 - Spring Boot Dashboard
 - Spring Boot Tools
 - Spring Initializr Java Support
@@ -84,14 +85,21 @@
     "python.defaultInterpreterPath": "C:\\Python39\\python.exe",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Cobalt2",
+	"workbench.startupEditor": "newUntitledFile",
+	"security.workspace.trust.untrustedFiles": "open",
+	"files.exclude": {
+		"**/.classpath": true,
+		"**/.project": true,
+		"**/.settings": true,
+		"**/.factorypath": true
+	},
+	"workbench.colorTheme": "One Dark Pro",
+	"explorer.confirmDelete": false,
 }
 ```
 
 #### Keybinding JSON
 ```
-// Place your key bindings in this file to override the defaultsauto[]
 [
     {
         "key": "ctrl+alt+n",
