@@ -4,6 +4,9 @@
 - Docker
 - EduTools
 - GitToolBox
+- Rainbow Brackets
+
+#### Possible extensions not mandatory to install
 - JBLSpringBootAppGen
 - Jpa Support
 - mysql-table-to-jpa-entity
