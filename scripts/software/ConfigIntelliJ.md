@@ -4,6 +4,7 @@
 - Docker
 - EduTools
 - GitToolBox
+- One Dark Theme
 - Rainbow Brackets
 
 #### Possible extensions not mandatory to install
