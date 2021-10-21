@@ -39,6 +39,8 @@
 
 - __[Base64 Image](https://www.base64-image.de/)__ Convierte imagen a base64
 
+- __[Clean Up](https://cleanup.pictures/)__ Borrado de objetos en una fotografía automáticamente
+
 - __[Compressor.io](https://compressor.io/)__ Reduce el peso de imágenes
 
 - __[Flaticon](https://www.flaticon.com/)__ Iconos gratis
