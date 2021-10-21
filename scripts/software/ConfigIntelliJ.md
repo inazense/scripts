@@ -22,3 +22,9 @@
 1. Ve a Help > Edit Custom VM Options
 2. Incluye ésta línea al final:
 `-Deditable.java.test.console=true`
+
+### Custom keymapping
+
+- Editor tab / Close: __Ctrl + W__
+- Edit / Extend Selection: __Ctrl + F4__
+- Active Editor / Soft-wrap: __Ctrl + Ñ__
