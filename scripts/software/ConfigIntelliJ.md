@@ -3,7 +3,9 @@
 #### Extensiones
 - Docker
 - EduTools
+- Extra Icons
 - GitToolBox
+- Key Promoter X
 - One Dark Theme
 - Rainbow Brackets
 
