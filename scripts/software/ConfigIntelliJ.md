@@ -10,7 +10,6 @@
 - One Dark Theme
 - Rainbow Brackets
 - Sonar Lint
-- Spring Assistant
 
 #### Cómo realizar inputs en modo de Debug
 1. Ve a Help > Edit Custom VM Options
@@ -19,6 +18,6 @@
 
 ### Custom keymapping
 
-- Editor tab / Close: __Ctrl + W__
+- Editor tab / Close tab: __Ctrl + W__
 - Edit / Extend Selection: __Ctrl + F4__
 - Active Editor / Soft-wrap: __Ctrl + Ñ__
