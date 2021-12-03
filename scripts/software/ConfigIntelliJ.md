@@ -6,17 +6,11 @@
 - Extra Icons
 - GitToolBox
 - Key Promoter X
+- Lombok
 - One Dark Theme
 - Rainbow Brackets
-
-#### Possible extensions not mandatory to install
-- JBLSpringBootAppGen
-- Jpa Support
-- mysql-table-to-jpa-entity
-- OpenAPI Generator
-- Spring and AngularJs Code Generator
+- Sonar Lint
 - Spring Assistant
-- SpringBootGen
 
 #### Cómo realizar inputs en modo de Debug
 1. Ve a Help > Edit Custom VM Options
