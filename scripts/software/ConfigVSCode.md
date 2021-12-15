@@ -7,7 +7,6 @@
 - Auto Rename Tag
 - Better Comments
 - Bookmarks
-- Bracket Pair Colorized 2
 - C# (instalar primero [.net Core SDK](https://dotnet.microsoft.com/download))
 - Color Highlight
 - GitLens
@@ -71,6 +70,8 @@
 			"backgroundColor": "transparent"
 		}
     ],
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs":"active"
     "editor.suggestSelection": "first",
     "editor.wordWrap": "on",
 	"editor.tabSize": 4,
