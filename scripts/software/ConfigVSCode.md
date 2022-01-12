@@ -70,8 +70,6 @@
 			"backgroundColor": "transparent"
 		}
     ],
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs":"active"
     "editor.suggestSelection": "first",
     "editor.wordWrap": "on",
 	"editor.tabSize": 4,
@@ -80,8 +78,12 @@
     "editor.fontFamily": "'cascadia code'",
     "editor.fontLigatures": true,
     "emmet.triggerExpansionOnTab": true,
+	"files.associations": 
+	{
+		"*.html": "html"
+	},
     "files.encoding": "utf8",
-    "python.defaultInterpreterPath": "C:\\Python39\\python.exe",
+    "python.defaultInterpreterPath": "C:\\Python310\\python.exe",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "newUntitledFile",
@@ -94,6 +96,9 @@
 	},
 	"workbench.colorTheme": "One Dark Pro",
 	"explorer.confirmDelete": false,
+	"liveServer.settings.donotVerifyTags": true,
+	"editor.bracketPairColorization.enabled": true,
+	"editor.guides.bracketPairs":"active",
 }
 ```
 
