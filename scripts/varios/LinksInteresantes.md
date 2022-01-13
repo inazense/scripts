@@ -45,6 +45,8 @@
 
 - __[Flaticon](https://www.flaticon.com/)__ Iconos gratis
 
+- __[Font Awesome](https://fontawesome.com/)__ Iconos gratis para insertar directamente en la web
+
 - __[Icons 8](https://icons8.com/)__ Descarga de iconos online
 
 - __[Iconduck](https://iconduck.com/)__ Descarga de iconos online
