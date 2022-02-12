@@ -99,6 +99,7 @@
 	"liveServer.settings.donotVerifyTags": true,
 	"editor.bracketPairColorization.enabled": true,
 	"editor.guides.bracketPairs":"active",
+	"java.home": "C:\\Program Files\\Java\\jdk-11.0.13",
 }
 ```
 
