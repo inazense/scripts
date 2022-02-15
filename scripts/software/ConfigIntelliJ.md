@@ -18,6 +18,8 @@
 
 ### Custom keymapping
 
-- Editor tab / Close tab: __Ctrl + W__
-- Edit / Extend Selection: __Ctrl + F4__
 - Active Editor / Soft-wrap: __Ctrl + Ñ__
+- Edit / Extend Selection: __Ctrl + F4__
+- Editor tab / Close tab: __Ctrl + W__
+- Refactor / Rename...: __Alt+F2__
+
