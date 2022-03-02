@@ -127,7 +127,7 @@ __[Configuración Visual Studio Code](/scripts/software/ConfigVSCode.md)__
 ### Varios
 __[Cheatsheet comandos GIT](/scripts/varios/cheatsheetGit.md)__
 
-__[Links interesantes](/scripts/varios/LinksInteresantes.md)__
+__[Onion links](/scripts/varios/Onion%20links.md))__
 
 __[Subreddits intersantes](/scripts/varios/subreddits.md)__
 
