@@ -7,6 +7,7 @@ Porque necesito un sitio para organizarme las porciones de código
 - [MAF](#maf)
 - [Movilizer](#movilizer)
 - [PHP](#php)
+- [PostgreSQL](#postgresql)
 - [Python](#python)
 - [Shortcuts](#shortcuts)
 - [Sistemas Operativos](#ssoo)
@@ -83,6 +84,9 @@ __[Ficheros](/scripts/php/Ficheros.php):__ Clase para trabajar con ficheros. Act
 __[GoogleMapsGeo](/scripts/php/GoogleMapsGeo.php):__ Clase para trabajar con la geocodificación con la API de Google Maps
 
 __[MailSender](/scripts/php/MailSender.php):__ Clase para realizar envíos de correos electrónicos. Requiere phpmailer para envíos complejos
+
+### Python
+__[dropAllTables](/scripts/postgresql/dropAllTables.sql):__ Borra y reconstruye el public de una BBDD de PostgreSQL
 
 ### Python
 __[barraProgresoTerminal](/scripts/python/barraProgresoTerminal.py):__ Genera una barra de progreso en la terminal
