@@ -2,7 +2,6 @@
 
 #### Extensiones
 
-- advanced-new-file
 - Auto Close Tag
 - Auto Rename Tag
 - Better Comments
@@ -102,55 +101,3 @@
 	"java.home": "C:\\Program Files\\Java\\jdk-11.0.13",
 }
 ```
-
-#### Keybinding JSON
-```
-[
-    {
-        "key": "ctrl+alt+n",
-        "command": "workbench.action.files.newUntitledFile"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "extension.advancedNewFile"
-    }
-    {
-        "key": "ctrl+n",
-        "command": "extension.advancedNewFile"
-    },
-    {
-        "key": "ctrl+[BracketRight]",
-        "command": "-workbench.action.zoomIn"
-    },
-    {
-        "key": "shift+ctrl+0",
-        "command": "-workbench.action.zoomIn"
-    },
-    {
-        "key": "shift+ctrl+-",
-        "command": "-workbench.action.zoomOut"
-    },
-    {
-        "key": "ctrl+numpad_subtract",
-        "command": "-workbench.action.zoomOut"
-    },
-    {
-        "key": "ctrl+-",
-        "command": "-workbench.action.zoomOut"
-    },
-    {
-        "key": "ctrl+numpad_add",
-        "command": "-workbench.action.zoomIn"
-    },
-    {
-        "key": "ctrl+[BracketRight]",
-        "command": "editor.action.fontZoomIn"
-    },
-    {
-        "key": "ctrl+-",
-        "command": "editor.action.fontZoomOut"
-    }
-]
-```
-
-
