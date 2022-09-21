@@ -85,7 +85,7 @@ __[GoogleMapsGeo](/scripts/php/GoogleMapsGeo.php):__ Clase para trabajar con la 
 
 __[MailSender](/scripts/php/MailSender.php):__ Clase para realizar envíos de correos electrónicos. Requiere phpmailer para envíos complejos
 
-### Python
+### PostgreSQL
 __[dropAllTables](/scripts/postgresql/dropAllTables.sql):__ Borra y reconstruye el public de una BBDD de PostgreSQL
 
 ### Python
