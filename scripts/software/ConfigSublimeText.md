@@ -9,4 +9,3 @@
 - Emmet
 - IndentXML
 - SidebarEnhancements
-- Tabnine
