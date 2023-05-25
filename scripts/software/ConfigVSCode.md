@@ -82,7 +82,7 @@
 		"*.html": "html"
 	},
     "files.encoding": "utf8",
-    "python.defaultInterpreterPath": "C:\\Python310\\python.exe",
+    "python.defaultInterpreterPath": "C:\\Users\\[YOUR_USER]\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "newUntitledFile",
@@ -98,6 +98,6 @@
 	"liveServer.settings.donotVerifyTags": true,
 	"editor.bracketPairColorization.enabled": true,
 	"editor.guides.bracketPairs":"active",
-	"java.home": "C:\\Program Files\\Java\\jdk-11.0.13",
+	"java.home": "C:\\Program Files\\Java\\jdk-17",
 }
 ```
