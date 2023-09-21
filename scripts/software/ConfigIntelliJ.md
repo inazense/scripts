@@ -3,7 +3,6 @@
 #### Extensiones
 - Docker
 - EduTools
-- Extra Icons
 - GitToolBox
 - Key Promoter X
 - Lombok
