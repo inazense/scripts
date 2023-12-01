@@ -9,3 +9,4 @@
 - Emmet
 - IndentXML
 - SidebarEnhancements
+- SQLBeautifier
