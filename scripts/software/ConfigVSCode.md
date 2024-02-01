@@ -12,14 +12,10 @@
 - Extension pack for Java (solo si JDK 11 o superior)
 - indent-rainbow
 - IntelliSense for CSS class names in HTML
-- JavaScript (ES6) code snippets
 - Live server
 - Material Icon Theme
-- npm (creador: egamma)	
-- npm Intellisense
 - One Dark Pro
 - Path Intellisense
-- Prettier - Code formatter
 - Python extension pack
 - Spring Boot Extension Pack
 - TODO Tree
@@ -97,7 +93,8 @@
 	"explorer.confirmDelete": false,
 	"liveServer.settings.donotVerifyTags": true,
 	"editor.bracketPairColorization.enabled": true,
+	"editor.mouseWheelZoom": true,
 	"editor.guides.bracketPairs":"active",
-	"java.home": "C:\\Program Files\\Java\\jdk-17",
+	"java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-17",
 }
 ```
