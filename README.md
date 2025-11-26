@@ -2,6 +2,7 @@
 Porque necesito un sitio para organizarme las porciones de código
 
 ## Categorías
+- [Git](#git)
 - [Java](#java)
 - [Jars compilated](#jars)
 - [MAF](#maf)
@@ -13,6 +14,11 @@ Porque necesito un sitio para organizarme las porciones de código
 - [Sistemas Operativos](#ssoo)
 - [Software](#software)
 - [Varios](#varios)
+
+### Git
+__[Cheatsheet comandos GIT](/scripts/git/cheatsheetGit.md)__
+
+__[Git custom shortcuts](/scripts/git/gitShortcuts.md)__
 
 ### Java
 __[ConexionSingleton](/scripts/java/ConexionSingleton.java):__ Clase usada para devolver objetos Connection a una base de datos MySQL implementando el patrón Singleton
@@ -131,8 +137,6 @@ __[Configuración Sublime Text 3](/scripts/software/ConfigSublimeText.md)__
 __[Configuración Visual Studio Code](/scripts/software/ConfigVSCode.md)__
 
 ### Varios
-__[Cheatsheet comandos GIT](/scripts/varios/cheatsheetGit.md)__
-
 __[Subreddits intersantes](/scripts/varios/subreddits.md)__
 
 __[Respuestas automatizadas](/scripts/varios/RespuestasAutomatizadas.md)__
